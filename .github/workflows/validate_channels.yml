@@ -1,0 +1,23 @@
+name: Validate channel inputs
+
+on:
+  push:
+    paths:
+      - "custom/output/*.csv"
+      - "custom/scripts/ci_validate_channels.ps1"
+  pull_request:
+    paths:
+      - "custom/output/*.csv"
+      - "custom/scripts/ci_validate_channels.ps1"
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run validator
+        shell: pwsh
+        run: |
+          pwsh -File custom/scripts/ci_validate_channels.ps1
