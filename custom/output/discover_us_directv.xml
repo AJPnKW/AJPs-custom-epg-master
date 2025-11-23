@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" ?><tv date="20251123">
+<channel id="1#238"><display-name>WINS</display-name><url>https://directv.com</url></channel>
+<channel id="WCHSDT1.us@SD"><display-name>Parkersburg, WV WCHS ABC 8 A3 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/2/27/WWAY_logo.png"/><url>https://directv.com</url></channel>
+<channel id="WTAPDT1.us@SD"><display-name>Parkersburg, WV WTAP NBC 15 A3 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="WOVALD1.us@SD"><display-name>Parkersburg, WV WOVA FOX 22 A3 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HSN.us@East"><display-name>Home Shopping Network 70-1</display-name><icon src="https://i.imgur.com/rnZN7rD.png"/><url>https://directv.com</url></channel>
+<channel id="QVC2.us@SD"><display-name>QVC2 (76)</display-name><icon src="https://i.imgur.com/NxbDjfI.png"/><url>https://directv.com</url></channel>
+<channel id="89#390"><display-name>VISION TV Channel 89</display-name><url>https://directv.com</url></channel>
+<channel id="163#163"><display-name>DTV Cinema 163</display-name><url>https://directv.com</url></channel>
+<channel id="162#162"><display-name>DTV Cinema 162</display-name><url>https://directv.com</url></channel>
+<channel id="88#349"><display-name>BEST Channel 88</display-name><url>https://directv.com</url></channel>
+<channel id="161#161"><display-name>DTV Cinema 161</display-name><url>https://directv.com</url></channel>
+<channel id="ShopLC.us@SD"><display-name>Shop LC (75)</display-name><icon src="https://i.postimg.cc/KzrwqTNc/shoplc.png"/><url>https://directv.com</url></channel>
+<channel id="160#160"><display-name>DTV Cinema 160</display-name><url>https://directv.com</url></channel>
+<channel id="87#315"><display-name>DEALS</display-name><url>https://directv.com</url></channel>
+<channel id="159#159"><display-name>DTV Cinema 159</display-name><url>https://directv.com</url></channel>
+<channel id="QVC.us@SD"><display-name>QVC (70)</display-name><icon src="https://i.postimg.cc/7PXF1dqJ/qvc.png"/><url>https://directv.com</url></channel>
+<channel id="158#158"><display-name>DTV Cinema 158 HD</display-name><url>https://directv.com</url></channel>
+<channel id="86#6177"><display-name>VALU 86</display-name><url>https://directv.com</url></channel>
+<channel id="157#157"><display-name>DTV Cinema 157 HD</display-name><url>https://directv.com</url></channel>
+<channel id="74#1978"><display-name>SALE Network.</display-name><url>https://directv.com</url></channel>
+<channel id="156#8389"><display-name>DTV Cinema 156 HD</display-name><url>https://directv.com</url></channel>
+<channel id="85#1975"><display-name>HOME TV (85-2)</display-name><url>https://directv.com</url></channel>
+<channel id="155#155"><display-name>DTV Cinema 155 HD</display-name><url>https://directv.com</url></channel>
+<channel id="WTAPDT2.us@SD"><display-name>Parkersburg, WV WTAPDT2 MNT 17 A3 SD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/512px-CBS_logo_%282020%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="130#130"><display-name>DTV Cinema 130 HD</display-name><url>https://directv.com</url></channel>
+<channel id="85#1974"><display-name>Save</display-name><url>https://directv.com</url></channel>
+<channel id="129#129"><display-name>DTV Cinema 129 HD</display-name><url>https://directv.com</url></channel>
+<channel id="ShopHQ.us@SD"><display-name>SHOP HQ (73)</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/6/69/ShopHQ_2019_Logo.png"/><url>https://directv.com</url></channel>
+<channel id="128#128"><display-name>DTV Cinema 128 HD</display-name><url>https://directv.com</url></channel>
+<channel id="NHLNetworkAlternate.us@SD"><display-name>NHL Network Alternate</display-name><icon src="https://i.imgur.com/ZlVT2iz.png"/><url>https://directv.com</url></channel>
+<channel id="85#348"><display-name>Get IT Infomercial 85-3</display-name><url>https://directv.com</url></channel>
+<channel id="NHLNetwork.us@SD"><display-name>NHL Network</display-name><icon src="https://i.imgur.com/UNZ8bef.png"/><url>https://directv.com</url></channel>
+<channel id="127#127"><display-name>DTV Cinema 127 HD</display-name><url>https://directv.com</url></channel>
+<channel id="214#574"><display-name>MAVTV HD</display-name><url>https://directv.com</url></channel>
+<channel id="W51EGD1.us@SD"><display-name>A3 Parkersburg 65 PBS (Virt)</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/8/89/PBS_logo_2019.svg"/><url>https://directv.com</url></channel>
+<channel id="213#5214"><display-name>MLB Network Alt. 213-1 HD</display-name><url>https://directv.com</url></channel>
+<channel id="126#126"><display-name>DTV Cinema 126 HD</display-name><url>https://directv.com</url></channel>
+<channel id="213#3228"><display-name>MLB Network HD</display-name><url>https://directv.com</url></channel>
+<channel id="85#332"><display-name>RENEW TV (85-1)</display-name><url>https://directv.com</url></channel>
+<channel id="MLBNetwork.us@SD"><display-name>MLB Network</display-name><icon src="https://i.imgur.com/sA5V39D.png"/><url>https://directv.com</url></channel>
+<channel id="124#124"><display-name>DTV Cinema 124</display-name><url>https://directv.com</url></channel>
+<channel id="MLBNetworkAlternate.us@SD"><display-name>MLB Network Alt. 213-1</display-name><icon src="https://i.imgur.com/7KPsRLb.png"/><url>https://directv.com</url></channel>
+<channel id="JewelryTV.us@SD"><display-name>Jewelry Television (72)</display-name><icon src="https://i.imgur.com/mBcwks7.png"/><url>https://directv.com</url></channel>
+<channel id="NFLNetwork.us@SD"><display-name>NFL Network HD</display-name><icon src="https://i.postimg.cc/mg5Sw3ns/nflnetwork.png"/><url>https://directv.com</url></channel>
+<channel id="123#123"><display-name>DTV Cinema 123 HD</display-name><url>https://directv.com</url></channel>
+<channel id="212#442"><display-name>NFL Network Alternate HD</display-name><url>https://directv.com</url></channel>
+<channel id="84#361"><display-name>IDEA Channel 84</display-name><url>https://directv.com</url></channel>
+<channel id="212#441"><display-name>NFL Network Alternate</display-name><url>https://directv.com</url></channel>
+<channel id="120#120"><display-name>DTV Cinema 120</display-name><url>https://directv.com</url></channel>
+<channel id="ESPN2.us@SD"><display-name>ESPN2 HD</display-name><icon src="https://i.imgur.com/00tsvjE.png"/><url>https://directv.com</url></channel>
+<channel id="119#119"><display-name>DTV Cinema 119</display-name><url>https://directv.com</url></channel>
+<channel id="83#358"><display-name>WOW TV 83</display-name><url>https://directv.com</url></channel>
+<channel id="ESPNU.us@SD"><display-name>ESPNU</display-name><icon src="https://i.imgur.com/HiBrysh.png"/><url>https://directv.com</url></channel>
+<channel id="118#6590"><display-name>DTV Cinema 118 HD</display-name><url>https://directv.com</url></channel>
+<channel id="71#6505"><display-name>News Mix 71</display-name><url>https://directv.com</url></channel>
+<channel id="ESPNews.us@SD"><display-name>ESPNews HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ESPNews.svg/512px-ESPNews.svg.png"/><url>https://directv.com</url></channel>
+<channel id="115#108"><display-name>DTV Cinema 115</display-name><url>https://directv.com</url></channel>
+<channel id="Bounce.us@SD"><display-name>BounceTV</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Bounce_TV_logo.svg/512px-Bounce_TV_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="ESPN.us@SD"><display-name>ESPN HD</display-name><icon src="https://i.postimg.cc/tR5dZgSH/espn.png"/><url>https://directv.com</url></channel>
+<channel id="114#107"><display-name>DTV Cinema 114 HD</display-name><url>https://directv.com</url></channel>
+<channel id="WIYELD1.us@SD"><display-name>Parkersburg, WV WIYE CBS 47 A3 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/512px-CBS_logo_%282020%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="205#5205"><display-name>SPORTS MIX HD (205)</display-name><url>https://directv.com</url></channel>
+<channel id="113#106"><display-name>Seasonal Sports Offer Channel</display-name><url>https://directv.com</url></channel>
+<channel id="HLN.us@SD"><display-name>HLN HD</display-name><icon src="https://i.postimg.cc/jSZkHbsD/hln.png"/><url>https://directv.com</url></channel>
+<channel id="Grit.us@SD"><display-name>GRIT</display-name><icon src="https://i.imgur.com/6w1Wj3j.png"/><url>https://directv.com</url></channel>
+<channel id="111#111"><display-name>Interactive Advertising Channel HD 111</display-name><url>https://directv.com</url></channel>
+<channel id="203#217"><display-name>COOL Network 203</display-name><url>https://directv.com</url></channel>
+<channel id="CNN.us@SD"><display-name>CNN HD</display-name><icon src="https://i.postimg.cc/RhWJ3vpc/cnn.png"/><url>https://directv.com</url></channel>
+<channel id="108#580"><display-name>CINE4K PPV</display-name><url>https://directv.com</url></channel>
+<channel id="80#6170"><display-name>COZI TV</display-name><url>https://directv.com</url></channel>
+<channel id="200#436"><display-name>News Mix</display-name><url>https://directv.com</url></channel>
+<channel id="107#6634"><display-name>CINE4K 107</display-name><url>https://directv.com</url></channel>
+<channel id="199#8111"><display-name>Kids Mix Channel</display-name><url>https://directv.com</url></channel>
+<channel id="181#181"><display-name>DTV Cinema 181</display-name><url>https://directv.com</url></channel>
+<channel id="104#6633"><display-name>DTV4K</display-name><url>https://directv.com</url></channel>
+<channel id="177#177"><display-name>DTV Cinema 177</display-name><url>https://directv.com</url></channel>
+<channel id="176#176"><display-name>DTV Cinema 176</display-name><url>https://directv.com</url></channel>
+<channel id="99#8915"><display-name>XTRA (99)</display-name><url>https://directv.com</url></channel>
+<channel id="175#175"><display-name>DTV Cinema 175</display-name><url>https://directv.com</url></channel>
+<channel id="174#174"><display-name>DTV Cinema 174</display-name><url>https://directv.com</url></channel>
+<channel id="98#498"><display-name>Interactive Advertising Channel HD (98)</display-name><url>https://directv.com</url></channel>
+<channel id="173#173"><display-name>DTV Cinema 173</display-name><url>https://directv.com</url></channel>
+<channel id="78#219"><display-name>COOL Network 78</display-name><url>https://directv.com</url></channel>
+<channel id="172#172"><display-name>DTV Cinema 172</display-name><url>https://directv.com</url></channel>
+<channel id="97#496"><display-name>SEEK 97 HD</display-name><url>https://directv.com</url></channel>
+<channel id="171#171"><display-name>DTV Cinema 171</display-name><url>https://directv.com</url></channel>
+<channel id="170#170"><display-name>DTV Cinema 170</display-name><url>https://directv.com</url></channel>
+<channel id="95#1979"><display-name>Celebrity Shopping TV 95</display-name><url>https://directv.com</url></channel>
+<channel id="169#169"><display-name>DTV Cinema 169</display-name><url>https://directv.com</url></channel>
+<channel id="77#553"><display-name>NEW TV (77)</display-name><url>https://directv.com</url></channel>
+<channel id="168#168"><display-name>DTV Cinema 168</display-name><url>https://directv.com</url></channel>
+<channel id="92#656"><display-name>CRAVE (92)</display-name><url>https://directv.com</url></channel>
+<channel id="167#167"><display-name>DTV Cinema 167</display-name><url>https://directv.com</url></channel>
+<channel id="166#166"><display-name>DTV Cinema 166</display-name><url>https://directv.com</url></channel>
+<channel id="91#1311"><display-name>FRESH (91)</display-name><url>https://directv.com</url></channel>
+<channel id="165#165"><display-name>DTV Cinema 165</display-name><url>https://directv.com</url></channel>
+<channel id="164#164"><display-name>DTV Cinema 164</display-name><url>https://directv.com</url></channel>
+<channel id="MagnoliaNetwork.us@East"><display-name>Magnolia Network</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Magnolia_Network.svg/512px-Magnolia_Network.svg.png"/><url>https://directv.com</url></channel>
+<channel id="TeenNick.us@East"><display-name>TeenNick</display-name><icon src="https://i.postimg.cc/kG4nCtQ7/teennick.png"/><url>https://directv.com</url></channel>
+<channel id="ActionMax.us@East"><display-name>ActionMax HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/ActionMax_logo.svg/512px-ActionMax_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="517#4066"><display-name>MoreMAX HD</display-name><url>https://directv.com</url></channel>
+<channel id="Nicktoons.us@East"><display-name>Nicktoons</display-name><icon src="https://i.postimg.cc/mZjCjNc5/nicktoons.png"/><url>https://directv.com</url></channel>
+<channel id="MoreMax.us@East"><display-name>MoreMAX</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MoreMax_Logo.svg/512px-MoreMax_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HGTV.us@East"><display-name>HGTV HD</display-name><icon src="https://i.postimg.cc/P5Qn09dH/hgtv.png"/><url>https://directv.com</url></channel>
+<channel id="Cinemax.us@West"><display-name>Cinemax West HD</display-name><icon src="https://i.postimg.cc/T3MfmTHT/cinemax.png"/><url>https://directv.com</url></channel>
+<channel id="NickJr.us@East"><display-name>Nick Jr. HD</display-name><icon src="https://i.imgur.com/KT4tdQs.png"/><url>https://directv.com</url></channel>
+<channel id="Cinemax.us@East"><display-name>Cinemax East HD</display-name><icon src="https://i.postimg.cc/T3MfmTHT/cinemax.png"/><url>https://directv.com</url></channel>
+<channel id="HBOLatino.us@East"><display-name>HBO Latino HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/HBO_Latino_%282014%29.svg/512px-HBO_Latino_%282014%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Nickelodeon.us@West"><display-name>Nickelodeon West</display-name><icon src="https://i.imgur.com/E84jnP8.png"/><url>https://directv.com</url></channel>
+<channel id="HBOZone.us@East"><display-name>HBO Zone HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/HBO_Zone_%282014%29.svg/512px-HBO_Zone_%282014%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Nickelodeon.us@East"><display-name>Nickelodeon East HD</display-name><icon src="https://i.imgur.com/E84jnP8.png"/><url>https://directv.com</url></channel>
+<channel id="508#508"><display-name>HBO Family West</display-name><url>https://directv.com</url></channel>
+<channel id="GemShoppingNetwork.us@SD"><display-name>GEM Shopping Network</display-name><icon src="https://i.imgur.com/WlHEpAu.png"/><url>https://directv.com</url></channel>
+<channel id="HBOFamily.us@East"><display-name>HBO Family East HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/512px-HBO_Family.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HBOComedy.us@East"><display-name>HBO Comedy HD</display-name><icon src="https://i.postimg.cc/52cr43st/hbocomedy.png"/><url>https://directv.com</url></channel>
+<channel id="Boomerang.us@SD"><display-name>Boomerang</display-name><icon src="https://i.postimg.cc/sxqSKFdp/boomerang.png"/><url>https://directv.com</url></channel>
+<channel id="HBO2.us@West"><display-name>HBO2 West HD</display-name><icon src="https://i.postimg.cc/J72ggmJZ/hbo2.png"/><url>https://directv.com</url></channel>
+<channel id="227#227"><display-name>MALL (Infomercial)</display-name><url>https://directv.com</url></channel>
+<channel id="CartoonNetwork.us@West"><display-name>Cartoon Network West</display-name><icon src="https://i.postimg.cc/qRY9TGPp/cartoonnetwork.png"/><url>https://directv.com</url></channel>
+<channel id="HBO.us@West"><display-name>HBO West HD</display-name><icon src="https://i.postimg.cc/D0HMbdFB/hbo.png"/><url>https://directv.com</url></channel>
+<channel id="CartoonNetwork.us@East"><display-name>Cartoon Network HD</display-name><icon src="https://i.postimg.cc/qRY9TGPp/cartoonnetwork.png"/><url>https://directv.com</url></channel>
+<channel id="HBOSignature.us@East"><display-name>HBO Signature HD East</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/HBO_Signature_%282014%29.svg/512px-HBO_Signature_%282014%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HBO2.us@East"><display-name>HBO2 HD East</display-name><icon src="https://i.postimg.cc/J72ggmJZ/hbo2.png"/><url>https://directv.com</url></channel>
+<channel id="UniversalKids.us@East"><display-name>Universal Kids HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Universal_Kids_2019_Logo.svg/512px-Universal_Kids_2019_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HBO.us@East"><display-name>HBO HD East</display-name><icon src="https://i.postimg.cc/D0HMbdFB/hbo.png"/><url>https://directv.com</url></channel>
+<channel id="225#341"><display-name>HOME TV (225)</display-name><url>https://directv.com</url></channel>
+<channel id="496#2174"><display-name>DTV Cinema 496</display-name><url>https://directv.com</url></channel>
+<channel id="490#5490"><display-name>MLS Direct Kick 490 HD</display-name><url>https://directv.com</url></channel>
+<channel id="DiscoveryFamily.us@SD"><display-name>Discovery Family Channel</display-name><icon src="https://i.imgur.com/pdNGDJ8.png"/><url>https://directv.com</url></channel>
+<channel id="490#4490"><display-name>MLS Direct Kick 490</display-name><url>https://directv.com</url></channel>
+<channel id="AmericasValueChannel.us@SD"><display-name>AVC (Infomercial)</display-name><icon src="https://i.imgur.com/bNjiEfi.png"/><url>https://directv.com</url></channel>
+<channel id="489#4489"><display-name>MLS Direct Kick 489 HD</display-name><url>https://directv.com</url></channel>
+<channel id="489#489"><display-name>MLS Direct Kick 489</display-name><url>https://directv.com</url></channel>
+<channel id="488#4488"><display-name>MLS Direct Kick 488 HD</display-name><url>https://directv.com</url></channel>
+<channel id="BabyFirst.us@US"><display-name>BabyFirst</display-name><icon src="https://i.imgur.com/WxLHBwu.png"/><url>https://directv.com</url></channel>
+<channel id="488#1488"><display-name>MLS Direct Kick 488</display-name><url>https://directv.com</url></channel>
+<channel id="223#239"><display-name>Celebrity Shopping TV</display-name><url>https://directv.com</url></channel>
+<channel id="487#5471"><display-name>MLS Direct Kick 487 HD</display-name><url>https://directv.com</url></channel>
+<channel id="DisneyXD.us@East"><display-name>Disney XD HD</display-name><icon src="https://i.postimg.cc/MKNssTyj/disneyxd.png"/><url>https://directv.com</url></channel>
+<channel id="487#471"><display-name>MLS Direct Kick 487</display-name><url>https://directv.com</url></channel>
+<channel id="486#5472"><display-name>MLS Direct Kick 486 HD</display-name><url>https://directv.com</url></channel>
+<channel id="486#472"><display-name>MLS Direct Kick 486</display-name><url>https://directv.com</url></channel>
+<channel id="222#222"><display-name>Save 222 (Infomercial)</display-name><url>https://directv.com</url></channel>
+<channel id="485#5473"><display-name>MLS Direct Kick 485 HD</display-name><url>https://directv.com</url></channel>
+<channel id="DisneyChannel.us@West"><display-name>Disney Channel (West)</display-name><icon src="https://i.postimg.cc/854KwmH1/disneychannel.png"/><url>https://directv.com</url></channel>
+<channel id="485#473"><display-name>MLS Direct Kick 485</display-name><url>https://directv.com</url></channel>
+<channel id="484#5474"><display-name>MLS Direct Kick 484 HD</display-name><url>https://directv.com</url></channel>
+<channel id="DisneyChannel.us@East"><display-name>Disney Channel HD</display-name><icon src="https://i.postimg.cc/854KwmH1/disneychannel.png"/><url>https://directv.com</url></channel>
+<channel id="484#474"><display-name>MLS Direct Kick 484</display-name><url>https://directv.com</url></channel>
+<channel id="CBSSportsNetworkUSA.us@SD"><display-name>CBS Sports Network HD</display-name><icon src="https://i.imgur.com/A8CnA8g.png"/><url>https://directv.com</url></channel>
+<channel id="483#5464"><display-name>MLS Direct Kick 483 HD</display-name><url>https://directv.com</url></channel>
+<channel id="483#464"><display-name>MLS Direct Kick 483</display-name><url>https://directv.com</url></channel>
+<channel id="482#5463"><display-name>MLS Direct Kick 482 HD</display-name><url>https://directv.com</url></channel>
+<channel id="DisneyJunior.us@East"><display-name>Disney Junior HD</display-name><icon src="https://i.postimg.cc/KvRqrLg2/disneyjunior.png"/><url>https://directv.com</url></channel>
+<channel id="482#463"><display-name>MLS Direct Kick 482</display-name><url>https://directv.com</url></channel>
+<channel id="481#5462"><display-name>MLS Direct Kick 481 HD</display-name><url>https://directv.com</url></channel>
+<channel id="481#462"><display-name>MLS Direct Kick 481</display-name><url>https://directv.com</url></channel>
+<channel id="480#5461"><display-name>MLS Direct Kick 480 HD</display-name><url>https://directv.com</url></channel>
+<channel id="PBSKids.us@SD"><display-name>PBS Kids</display-name><icon src="https://i.imgur.com/q4cUQKW.png"/><url>https://directv.com</url></channel>
+<channel id="480#461"><display-name>MLS Direct Kick 480</display-name><url>https://directv.com</url></channel>
+<channel id="219#8242"><display-name>FOX Sports 1 HD</display-name><url>https://directv.com</url></channel>
+<channel id="479#3879"><display-name>MLS Direct Kick 479 HD</display-name><url>https://directv.com</url></channel>
+<channel id="AmericanHeroesChannel.us@SD"><display-name>American Heroes HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/American_Heroes_Channel_logo.svg/512px-American_Heroes_Channel_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="479#479"><display-name>MLS Direct Kick 479</display-name><url>https://directv.com</url></channel>
+<channel id="478#478"><display-name>MLS Direct Kick 478</display-name><url>https://directv.com</url></channel>
+<channel id="478#452"><display-name>MLS Direct Kick 478 HD</display-name><url>https://directv.com</url></channel>
+<channel id="219#607"><display-name>FOX Sports 1</display-name><url>https://directv.com</url></channel>
+<channel id="477#477"><display-name>MLS Direct Kick 477</display-name><url>https://directv.com</url></channel>
+<channel id="DestinationAmerica.us@SD"><display-name>Destination America HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/512px-Destination_America_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="477#455"><display-name>MLS Direct Kick 477 HD</display-name><url>https://directv.com</url></channel>
+<channel id="476#5476"><display-name>MLS Direct Kick 476 HD</display-name><url>https://directv.com</url></channel>
+<channel id="476#476"><display-name>MLS Direct Kick 476</display-name><url>https://directv.com</url></channel>
+<channel id="GolfChannel.us@SD"><display-name>Golf Channel HD</display-name><icon src="https://i.imgur.com/Lgux6Ik.png"/><url>https://directv.com</url></channel>
+<channel id="475#5475"><display-name>MLS Direct Kick 475 HD</display-name><url>https://directv.com</url></channel>
+<channel id="InvestigationDiscovery.us@East"><display-name>Investigation Discovery HD</display-name><icon src="https://i.postimg.cc/bvqpJ8md/investigationdiscovery.png"/><url>https://directv.com</url></channel>
+<channel id="475#475"><display-name>MLS Direct Kick 475</display-name><url>https://directv.com</url></channel>
+<channel id="474#6460"><display-name>Meganoticias</display-name><url>https://directv.com</url></channel>
+<channel id="EstrellaNews.us@SD"><display-name>Estrella News</display-name><icon src="https://i.imgur.com/HRrkhLq.png"/><url>https://directv.com</url></channel>
+<channel id="472#6463"><display-name>Nuestra Vision</display-name><url>https://directv.com</url></channel>
+<channel id="Science.us@East"><display-name>Science HD</display-name><icon src="https://i.imgur.com/jVwWHP1.png"/><url>https://directv.com</url></channel>
+<channel id="TyCSportsLatinAmerica.ar@Panregional"><display-name>TyC Sports</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/512px-TyC_Sports_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="GolTVUSA.us@SD"><display-name>GolTV</display-name><icon src="https://i.imgur.com/pypul3s.png"/><url>https://directv.com</url></channel>
+<channel id="ESPNDeportes.us@SD"><display-name>ESPN Deportes HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/ESPN_Deportes.svg/512px-ESPN_Deportes.svg.png"/><url>https://directv.com</url></channel>
+<channel id="TennisChannel.us@SD"><display-name>Tennis Channel HD</display-name><icon src="https://i.imgur.com/tsljAnY.png"/><url>https://directv.com</url></channel>
+<channel id="NationalGeographicWild.us@East"><display-name>Nat Geo Wild HD</display-name><icon src="https://i.postimg.cc/cL2mQJfD/nationalgeographicwild.png"/><url>https://directv.com</url></channel>
+<channel id="FoxDeportes.us@SD"><display-name>FOX Deportes HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/512px-FOX_Deportes_logo.png"/><url>https://directv.com</url></channel>
+<channel id="TUDN.us@SD"><display-name>TUDN</display-name><icon src="https://i.imgur.com/oT5CAvd.png"/><url>https://directv.com</url></channel>
+<channel id="AnimalPlanet.us@East"><display-name>Animal Planet HD</display-name><icon src="https://i.postimg.cc/ZKbSH9KK/animalplanet.png"/><url>https://directv.com</url></channel>
+<channel id="CineMexicano.us@SD"><display-name>Cine Mexicano</display-name><icon src="https://i.imgur.com/BhHKphL.png"/><url>https://directv.com</url></channel>
+<channel id="HITN.us@SD"><display-name>HITN</display-name><icon src="https://i.imgur.com/bgaKLKh.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass2.us@SD"><display-name>NBA League Pass HD 748</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass1.us@SD"><display-name>NBA League Pass HD 747</display-name><icon src="https://i.imgur.com/tNh7Peh.png"/><url>https://directv.com</url></channel>
+<channel id="TVEInternacionalAmerica.es@SD"><display-name>TVE</display-name><icon src="https://i.imgur.com/iODADvi.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket14.us@SD"><display-name>NFL Sunday Ticket 718 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket13.us@SD"><display-name>NFL Sunday Ticket 717 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NBATV.us@SD"><display-name>NBA TV HD</display-name><icon src="https://i.postimg.cc/pVCJsCD5/nbatv.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket12.us@SD"><display-name>NFL Sunday Ticket 716 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket11.us@SD"><display-name>NFL Sunday Ticket 715 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket10.us@SD"><display-name>NFL Sunday Ticket 714 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket9.us@SD"><display-name>NFL Sunday Ticket 713 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="459#6468"><display-name>Atres Cine</display-name><url>https://directv.com</url></channel>
+<channel id="281#3505"><display-name>MotorTrend HD</display-name><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket8.us@SD"><display-name>NFL Sunday Ticket 712 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket7.us@SD"><display-name>NFL Sunday Ticket 711 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="Antena3Internacional.es@SD"><display-name>Antena 3</display-name><icon src="https://i.postimg.cc/pXXw8gqm/antena3internacional.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket6.us@SD"><display-name>NFL Sunday Ticket 710 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket5.us@SD"><display-name>NFL Sunday Ticket 709 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket4.us@SD"><display-name>NFL Sunday Ticket 708 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket3.us@SD"><display-name>NFL Sunday Ticket 707 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket2.us@SD"><display-name>NFL Sunday Ticket 706 HD</display-name><icon src="https://i.imgur.com/WBOM46Z.png"/><url>https://directv.com</url></channel>
+<channel id="NFLSundayTicket1.us@SD"><display-name>NFL Sunday Ticket 705 HD</display-name><icon src="https://i.imgur.com/OhHxZrE.png"/><url>https://directv.com</url></channel>
+<channel id="EcuadorTV.ec@SD"><display-name>Ecuador TV</display-name><icon src="https://i.imgur.com/vDDEKx6.jpg"/><url>https://directv.com</url></channel>
+<channel id="TLC.us@East"><display-name>TLC HD</display-name><icon src="https://i.postimg.cc/NMnt7mfy/tlc.png"/><url>https://directv.com</url></channel>
+<channel id="704#5704"><display-name>NFL Fantasy Zone 704 HD</display-name><url>https://directv.com</url></channel>
+<channel id="NFLRedZone.us@SD"><display-name>NFL Red Zone 703 HD</display-name><icon src="https://i.imgur.com/5lPqQj5.png"/><url>https://directv.com</url></channel>
+<channel id="702#5702"><display-name>NFL Sunday Ticket Game Mix 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="701#5701"><display-name>NFL Sunday Ticket Game Mix 1 HD</display-name><url>https://directv.com</url></channel>
+<channel id="698#5669"><display-name>NBC Sports California HD (Alternate2)</display-name><url>https://directv.com</url></channel>
+<channel id="NBCSportsCalifornia.us@SD"><display-name>NBC Sports California HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NBC_Sports_California.png/512px-NBC_Sports_California.png"/><url>https://directv.com</url></channel>
+<channel id="456#578"><display-name>ESNE PIO</display-name><url>https://directv.com</url></channel>
+<channel id="698#2669"><display-name>NBC Sports California (Alternate 2)</display-name><url>https://directv.com</url></channel>
+<channel id="NBCSportsBayAreaPlus.us@SD"><display-name>NBC Sports Bay Area Plus HD (Alternate 2)</display-name><icon src="https://i.imgur.com/AbjaryJ.png"/><url>https://directv.com</url></channel>
+<channel id="NBCSportsBayArea.us@SD"><display-name>NBC Sports Bay Area HD</display-name><icon src="https://i.imgur.com/MTgUVKx.png"/><url>https://directv.com</url></channel>
+<channel id="BallySportsSanDiego.us@SD"><display-name>Bally Sports San Diego</display-name><icon src="https://i.imgur.com/XOC7W9E.png"/><url>https://directv.com</url></channel>
+<channel id="694#3651"><display-name>Bally Sports San Diego Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="455#2527"><display-name>INFO Temp 7</display-name><url>https://directv.com</url></channel>
+<channel id="BallySportsSanDiegoPlus.us@SD"><display-name>Bally Sports San Diego Extra HD</display-name><icon src="https://i.imgur.com/EGXaoel.png"/><url>https://directv.com</url></channel>
+<channel id="693#5693"><display-name>Bally Sports SoCal HD</display-name><url>https://directv.com</url></channel>
+<channel id="UnivisionTlnovelas.us@SD"><display-name>Univision telenovelas</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Univision_tlnovelas_%282019%29.svg/512px-Univision_tlnovelas_%282019%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="693#2693"><display-name>Bally Sports SoCal</display-name><url>https://directv.com</url></channel>
+<channel id="693#655"><display-name>Bally Sports SoCal Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="693#654"><display-name>Bally Sports SoCal Extra</display-name><url>https://directv.com</url></channel>
+<channel id="692#6803"><display-name>Bally Sports West Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="692#6802"><display-name>Bally Sports West Extra</display-name><url>https://directv.com</url></channel>
+<channel id="692#5692"><display-name>Bally Sports West HD</display-name><url>https://directv.com</url></channel>
+<channel id="692#2692"><display-name>Bally Sports West</display-name><url>https://directv.com</url></channel>
+<channel id="691#6655"><display-name>Spectrum SportsNet HD (Alternate)</display-name><url>https://directv.com</url></channel>
+<channel id="691#6654"><display-name>Spectrum SportsNet (Alternate)</display-name><url>https://directv.com</url></channel>
+<channel id="SpectrumSportsNet.us@SD"><display-name>Spectrum SportsNet</display-name><icon src="https://i.imgur.com/EENrv5p.png"/><url>https://directv.com</url></channel>
+<channel id="SpectrumSportsNetLA.us@SD"><display-name>Spectrum SportsNet LA HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Spectrum_Sportsnet_LA.svg/512px-Spectrum_Sportsnet_LA.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Foro.mx@SD"><display-name>FOROtv</display-name><icon src="https://i.imgur.com/dDFrONz.png"/><url>https://directv.com</url></channel>
+<channel id="OWN.us@West"><display-name>OWN West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/OWN_2011_logo.svg/512px-OWN_2011_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="RootSportsNorthwestPlus.us@SD"><display-name>ROOT SPORTS Northwest Plus HD</display-name><icon src="https://i.imgur.com/iRzlhJl.png"/><url>https://directv.com</url></channel>
+<channel id="RootSportsNorthwest.us@SD"><display-name>ROOT SPORTS Northwest HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Root_Sports_logo.svg/512px-Root_Sports_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="RootSportsNorthwestAlternate.us@SD"><display-name>ROOT Sports Northwest Plus 2 HD</display-name><icon src="https://i.imgur.com/qjNGD6v.png"/><url>https://directv.com</url></channel>
+<channel id="BallySportsArizonaPlus.us@SD"><display-name>Bally Sports Arizona Extra 2 HD</display-name><icon src="https://i.imgur.com/p0RMElK.png"/><url>https://directv.com</url></channel>
+<channel id="DePeliculaClasico.mx@SD"><display-name>De Pelicula Clasico</display-name><icon src="https://i.imgur.com/L6J0kDU.png"/><url>https://directv.com</url></channel>
+<channel id="BallySportsArizona.us@SD"><display-name>Bally Sports Arizona HD</display-name><icon src="https://i.imgur.com/SmZoEph.png"/><url>https://directv.com</url></channel>
+<channel id="BallySportsArizonaExtra.us@SD"><display-name>Bally Sports Arizona Extra HD</display-name><icon src="https://i.imgur.com/nHukFdP.png"/><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetRockyMountainWest.us@SD"><display-name>AT&amp;T SportsNet Rocky Mountain West</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Logo_for_AT%26T_SportsNet.svg/512px-Logo_for_AT%26T_SportsNet.svg.png"/><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetRockyMountain.us@SD"><display-name>AT&amp;T SportsNet Rocky Mountain HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Logo_for_AT%26T_SportsNet.svg/512px-Logo_for_AT%26T_SportsNet.svg.png"/><url>https://directv.com</url></channel>
+<channel id="DePeliculaUS.us@SD"><display-name>De Pelicula</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DPel%C3%ADcula_2021.svg/512px-DPel%C3%ADcula_2021.svg.png"/><url>https://directv.com</url></channel>
+<channel id="279#8851"><display-name>OWN HD</display-name><url>https://directv.com</url></channel>
+<channel id="AltitudeSports.us@SD"><display-name>Altitude Sports HD</display-name><icon src="https://i.imgur.com/TzWflKZ.png"/><url>https://directv.com</url></channel>
+<channel id="LonghornNetwork.us@SD"><display-name>Longhorn Network HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Longhorn_Network_logo.svg/512px-Longhorn_Network_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="676#5676"><display-name>Bally Sports Southwest HD</display-name><url>https://directv.com</url></channel>
+<channel id="676#2676"><display-name>Bally Sports Southwest</display-name><url>https://directv.com</url></channel>
+<channel id="676#651"><display-name>Bally Sports Southwest Extra 3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="676#650"><display-name>Bally Sports Southwest Extra 3</display-name><url>https://directv.com</url></channel>
+<channel id="ViendoMovies.us@SD"><display-name>Viendo Movies</display-name><icon src="https://i.imgur.com/wb0rv7g.png"/><url>https://directv.com</url></channel>
+<channel id="676#649"><display-name>Bally Sports Southwest Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="676#648"><display-name>Bally Sports Southwest Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="676#639"><display-name>Bally Sports Southwest Extra 5 HD</display-name><url>https://directv.com</url></channel>
+<channel id="676#638"><display-name>Bally Sports Southwest Extra 5</display-name><url>https://directv.com</url></channel>
+<channel id="676#637"><display-name>Bally Sports Southwest Extra 4 HD</display-name><url>https://directv.com</url></channel>
+<channel id="676#636"><display-name>Bally Sports Southwest Extra 4</display-name><url>https://directv.com</url></channel>
+<channel id="675#2675"><display-name>Bally Sports Oklahoma HD</display-name><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetSouthwest.us@SD"><display-name>AT&amp;T SportsNet Southwest HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Logo_for_AT%26T_SportsNet.svg/512px-Logo_for_AT%26T_SportsNet.svg.png"/><url>https://directv.com</url></channel>
+<channel id="CineSony.us@SD"><display-name>Sony Cine</display-name><icon src="https://i.imgur.com/bZWoDTg.png"/><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetSouthwestAlternate.us@SD"><display-name>AT&amp;T SportsNet Southwest HD (Alternate)</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Logo_for_AT%26T_SportsNet.svg/512px-Logo_for_AT%26T_SportsNet.svg.png"/><url>https://directv.com</url></channel>
+<channel id="671#5672"><display-name>Bally Sports Kansas City HD</display-name><url>https://directv.com</url></channel>
+<channel id="OWN.us@East"><display-name>OWN</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/OWN_2011_logo.svg/512px-OWN_2011_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="671#5671"><display-name>Bally Sports Midwest HD</display-name><url>https://directv.com</url></channel>
+<channel id="671#2672"><display-name>Bally Sports Kansas City</display-name><url>https://directv.com</url></channel>
+<channel id="671#2671"><display-name>Bally Sports Midwest</display-name><url>https://directv.com</url></channel>
+<channel id="671#647"><display-name>Bally Sports Midwest Extra 3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="Enlace.cr@SD"><display-name>Enlace</display-name><icon src="https://i.imgur.com/YwUVTmS.png"/><url>https://directv.com</url></channel>
+<channel id="671#646"><display-name>Bally Sports Midwest Extra 3</display-name><url>https://directv.com</url></channel>
+<channel id="671#643"><display-name>Bally Sports Midwest Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="671#642"><display-name>Bally Sports Midwest Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="671#641"><display-name>Bally Sports Midwest Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="671#640"><display-name>Bally Sports Midwest Extra</display-name><url>https://directv.com</url></channel>
+<channel id="669#2670"><display-name>Bally Sports Wisconsin HD</display-name><url>https://directv.com</url></channel>
+<channel id="669#631"><display-name>Bally Sports Wisconsin Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="669#629"><display-name>Bally Sports Wisconsin Extra</display-name><url>https://directv.com</url></channel>
+<channel id="XEIPNTDT.mx@SD"><display-name>Once Mexico</display-name><icon src="https://i.imgur.com/K0351vF.png"/><url>https://directv.com</url></channel>
+<channel id="DiscoveryChannel.us@East"><display-name>Discovery HD</display-name><icon src="https://i.postimg.cc/T2QFcf7r/discoverychannel.png"/><url>https://directv.com</url></channel>
+<channel id="668#2668"><display-name>Bally Sports North</display-name><url>https://directv.com</url></channel>
+<channel id="668#628"><display-name>Bally Sports North Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="668#627"><display-name>Bally Sports North Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="NBCSportsChicago.us@SD"><display-name>NBC Sports Chicago HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/NBC_Sports_Chicago_Logo.svg/500px-NBC_Sports_Chicago_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="NBCSportsChicagoPlus2.us@SD"><display-name>NBC Sports Chicago Plus 2 HD</display-name><icon src="https://i.imgur.com/6HcSnDE.png"/><url>https://directv.com</url></channel>
+<channel id="Canal22Internacional.mx@SD"><display-name>Canal 22 Internacional</display-name><icon src="https://i.imgur.com/D9aO5do.png"/><url>https://directv.com</url></channel>
+<channel id="MarqueeSportsNetwork.us@SD"><display-name>Marquee Sports Network HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Marquee_Sports_Network_Logo.svg/512px-Marquee_Sports_Network_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="663#6128"><display-name>Bally Sports Detroit Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="663#6127"><display-name>Bally Sports Detroit Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="663#5664"><display-name>Bally Sports Detroit Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="663#5663"><display-name>Bally Sports Detroit HD</display-name><url>https://directv.com</url></channel>
+<channel id="663#2664"><display-name>Bally Sports Detroit Extra</display-name><url>https://directv.com</url></channel>
+<channel id="663#2663"><display-name>Bally Sports Detroit</display-name><url>https://directv.com</url></channel>
+<channel id="MTVTr3s.us@East"><display-name>Tr3S</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/MTV_Tres_2010_logo.svg/512px-MTV_Tres_2010_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="662#5657"><display-name>Bally Sports Great Lakes HD</display-name><url>https://directv.com</url></channel>
+<channel id="662#2662"><display-name>Bally Sports Great Lakes</display-name><url>https://directv.com</url></channel>
+<channel id="661#2661"><display-name>Bally Sports Cincinnati</display-name><url>https://directv.com</url></channel>
+<channel id="661#626"><display-name>Bally Sports Cincinnati Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="661#625"><display-name>Bally Sports Cincinnati Extra</display-name><url>https://directv.com</url></channel>
+<channel id="660#2660"><display-name>Bally Sports Ohio</display-name><url>https://directv.com</url></channel>
+<channel id="660#624"><display-name>Bally Sports Ohio Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="660#623"><display-name>Bally Sports Ohio Extra</display-name><url>https://directv.com</url></channel>
+<channel id="Pasiones.us@SD"><display-name>Pasiones</display-name><icon src="https://i.imgur.com/BCWbGf9.png"/><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetPittsburgh.us@SD"><display-name>AT&amp;T SportsNet Pittsburgh HD</display-name><icon src="https://i.imgur.com/3VcEarY.png"/><url>https://directv.com</url></channel>
+<channel id="659#635"><display-name>AT&amp;T SportsNet Pittsburgh HD (Alternate 2)</display-name><url>https://directv.com</url></channel>
+<channel id="659#634"><display-name>AT&amp;T SportsNet Pittsburgh (Alternate 2)</display-name><url>https://directv.com</url></channel>
+<channel id="ATTSportsNetPittsburghAlternate.us@SD"><display-name>AT&amp;T SportsNet Pittsburgh HD (Alternate)</display-name><icon src="https://i.imgur.com/3LRJzqZ.png"/><url>https://directv.com</url></channel>
+<channel id="654#8438"><display-name>Bally Sports Florida Extra 3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="654#8416"><display-name>Bally Sports Florida Extra 3</display-name><url>https://directv.com</url></channel>
+<channel id="HistoryenEspanol.us@SD"><display-name>History en Espanol</display-name><icon src="https://i.imgur.com/KP4e1kk.png"/><url>https://directv.com</url></channel>
+<channel id="TravelChannel.us@East"><display-name>Travel Channel HD</display-name><icon src="https://i.imgur.com/RmHGeP1.png"/><url>https://directv.com</url></channel>
+<channel id="654#5511"><display-name>Bally Sports Florida Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="654#5510"><display-name>Bally Sports Florida Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="654#3774"><display-name>Bally Sports Florida HD</display-name><url>https://directv.com</url></channel>
+<channel id="654#2655"><display-name>Bally Sports Florida Extra</display-name><url>https://directv.com</url></channel>
+<channel id="654#2654"><display-name>Bally Sports Florida</display-name><url>https://directv.com</url></channel>
+<channel id="653#5656"><display-name>Bally Sports Sun Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="653#5653"><display-name>Bally Sports Sun HD</display-name><url>https://directv.com</url></channel>
+<channel id="EstrellaTV.us@SD"><display-name>Estrella TV</display-name><icon src="https://i.imgur.com/IZxjnyp.png"/><url>https://directv.com</url></channel>
+<channel id="653#2656"><display-name>Bally Sports Sun Extra</display-name><url>https://directv.com</url></channel>
+<channel id="653#2653"><display-name>Bally Sports Sun</display-name><url>https://directv.com</url></channel>
+<channel id="653#2542"><display-name>Bally Sports Sun Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="653#2541"><display-name>Bally Sports Sun Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="649#5650"><display-name>Bally Sports Southeast Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="649#5649"><display-name>Bally Sports Southeast HD</display-name><url>https://directv.com</url></channel>
+<channel id="649#2650"><display-name>Bally Sports Southeast Extra</display-name><url>https://directv.com</url></channel>
+<channel id="649#2649"><display-name>Bally Sports Southeast</display-name><url>https://directv.com</url></channel>
+<channel id="AztecaUS.us@East"><display-name>Azteca America</display-name><icon src="https://i.imgur.com/CSZ8D47.png"/><url>https://directv.com</url></channel>
+<channel id="649#618"><display-name>Bally Sports Southeast Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="649#617"><display-name>Bally Sports Southeast Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="649#616"><display-name>Bally Sports Southeast Extra 3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="649#604"><display-name>Bally Sports Southeast Extra 3</display-name><url>https://directv.com</url></channel>
+<channel id="646#6145"><display-name>Bally Sports South Extra 3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="646#6144"><display-name>Bally Sports South Extra 3</display-name><url>https://directv.com</url></channel>
+<channel id="646#5648"><display-name>Bally Sports South Extra 5 HD</display-name><url>https://directv.com</url></channel>
+<channel id="646#5647"><display-name>Bally Sports South Extra 4 HD</display-name><url>https://directv.com</url></channel>
+<channel id="440#3818"><display-name>Vme</display-name><url>https://directv.com</url></channel>
+<channel id="646#5646"><display-name>Bally Sports South HD</display-name><url>https://directv.com</url></channel>
+<channel id="646#5644"><display-name>Bally Sports South Extra 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="646#2648"><display-name>Bally Sports South Extra 5</display-name><url>https://directv.com</url></channel>
+<channel id="646#2647"><display-name>Bally Sports South Extra 4</display-name><url>https://directv.com</url></channel>
+<channel id="646#2646"><display-name>Bally Sports South</display-name><url>https://directv.com</url></channel>
+<channel id="646#644"><display-name>Bally Sports South Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="NBCSportsWashingtonPlus.us@SD"><display-name>NBC Sports Washington HD (Alternate)</display-name><icon src="https://i.imgur.com/v7C3uxd.png"/><url>https://directv.com</url></channel>
+<channel id="NBCSportsWashington.us@SD"><display-name>NBC Sports Washington HD</display-name><icon src="https://i.imgur.com/j9mVaf3.png"/><url>https://directv.com</url></channel>
+<channel id="SurPeru.pe@SD"><display-name>SUR Peru</display-name><icon src="https://i.imgur.com/ubIBLDo.png"/><url>https://directv.com</url></channel>
+<channel id="NationalGeographic.us@East"><display-name>National Geographic HD</display-name><icon src="https://i.postimg.cc/FsPGHpzX/nationalgeographic.png"/><url>https://directv.com</url></channel>
+<channel id="EcuavisaInternacional.ec@SD"><display-name>Ecuavisa Internacional</display-name><icon src="https://i.imgur.com/1HQc7oa.png"/><url>https://directv.com</url></channel>
+<channel id="640#5620"><display-name>MASN HD</display-name><url>https://directv.com</url></channel>
+<channel id="MASN.us@SD"><display-name>MASN</display-name><icon src="https://i.imgur.com/ZF5HKKY.png"/><url>https://directv.com</url></channel>
+<channel id="SportsNetNewYork.us@SD"><display-name>SportsNet New York HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SNY_logo.svg/512px-SNY_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="635#5637"><display-name>MSG/MSGSN Alternate 635-2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="635#5636"><display-name>MSG Alternate HD 635-1</display-name><url>https://directv.com</url></channel>
+<channel id="TVChile.cl@SD"><display-name>TV Chile</display-name><icon src="https://i.imgur.com/oYFto0V.png"/><url>https://directv.com</url></channel>
+<channel id="635#5635"><display-name>MSG Sportsnet HD</display-name><url>https://directv.com</url></channel>
+<channel id="635#2638"><display-name>MSG/MSGSN Alternate 635-3</display-name><url>https://directv.com</url></channel>
+<channel id="635#2637"><display-name>MSG/MSGSN Alternate 635-2</display-name><url>https://directv.com</url></channel>
+<channel id="635#2636"><display-name>MSG Alternate 635-1</display-name><url>https://directv.com</url></channel>
+<channel id="635#2635"><display-name>MSG Sportsnet</display-name><url>https://directv.com</url></channel>
+<channel id="635#2447"><display-name>MSG/MSGSN Alternate 635-3 HD</display-name><url>https://directv.com</url></channel>
+<channel id="634#5634"><display-name>Madison Square Garden HD</display-name><url>https://directv.com</url></channel>
+<channel id="634#2634"><display-name>Madison Square Garden</display-name><url>https://directv.com</url></channel>
+<channel id="DiscoveryFamilia.us@SD"><display-name>Discovery Familia</display-name><icon src="https://i.imgur.com/jTx9s7F.png"/><url>https://directv.com</url></channel>
+<channel id="631#8264"><display-name>YES HD (Alternate)</display-name><url>https://directv.com</url></channel>
+<channel id="YesNetwork.us@SD"><display-name>YES HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/YES_Network_logo.svg/330px-YES_Network_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="631#2633"><display-name>YES (Alternate)</display-name><url>https://directv.com</url></channel>
+<channel id="NBCSportsBoston.us@SD"><display-name>NBC Sports Boston HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/NBC_Sports_Boston.png/512px-NBC_Sports_Boston.png"/><url>https://directv.com</url></channel>
+<channel id="630#615"><display-name>NBC Sports Boston Alternate HD</display-name><url>https://directv.com</url></channel>
+<channel id="630#610"><display-name>NBC Sports Boston Alternate</display-name><url>https://directv.com</url></channel>
+<channel id="NatGeoMundo.us@SD"><display-name>Nat Geo Mundo</display-name><icon src="https://i.imgur.com/0gruEy1.png"/><url>https://directv.com</url></channel>
+<channel id="NESN.us@SD"><display-name>NESN HD</display-name><icon src="https://i.imgur.com/Lv1bUG5.png"/><url>https://directv.com</url></channel>
+<channel id="623#8981"><display-name>Next Level Sports HD</display-name><url>https://directv.com</url></channel>
+<channel id="FoxSoccerPlus.us@SD"><display-name>FOX Soccer Plus</display-name><icon src="https://i.imgur.com/gR7u8DM.png"/><url>https://directv.com</url></channel>
+<channel id="FoxSports2LatinAmerica.us@South"><display-name>FOX Sports 2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="ACCNetwork.us@SD"><display-name>ACC Network HD</display-name><icon src="https://i.imgur.com/TpCkbkT.png"/><url>https://directv.com</url></channel>
+<channel id="434#6544"><display-name>Hogar de HGTV</display-name><url>https://directv.com</url></channel>
+<channel id="SECNetwork.us@SD"><display-name>SEC Network HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/SEC_Network_logo.svg/512px-SEC_Network_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="SECNetworkAlternate.us@SD"><display-name>SEC Network Alternate HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/SEC_Network_logo.svg/512px-SEC_Network_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="610#5610"><display-name>BTN HD</display-name><url>https://directv.com</url></channel>
+<channel id="610#2610"><display-name>BTN</display-name><url>https://directv.com</url></channel>
+<channel id="StadiumCollegeSports.us@Pacific"><display-name>Stadium College Sports Pacific</display-name><icon src="https://i.imgur.com/8E9QA0C.png"/><url>https://directv.com</url></channel>
+<channel id="StadiumCollegeSports.us@Central"><display-name>Stadium College Sports Central</display-name><icon src="https://i.imgur.com/8E9QA0C.png"/><url>https://directv.com</url></channel>
+<channel id="BandamaxUSA.us@SD"><display-name>Bandamax</display-name><icon src="https://i.imgur.com/Pch8vTI.png"/><url>https://directv.com</url></channel>
+<channel id="StadiumCollegeSports.us@Atlantic"><display-name>Stadium College Sports Atlantic</display-name><icon src="https://i.imgur.com/8E9QA0C.png"/><url>https://directv.com</url></channel>
+<channel id="OutdoorChannel.us@SD"><display-name>Outdoor Channel</display-name><icon src="https://i.imgur.com/Kh4MWaY.png"/><url>https://directv.com</url></channel>
+<channel id="SportsmanChannel.us@SD"><display-name>Sportsman Channel</display-name><icon src="https://i.imgur.com/CXauv8M.png"/><url>https://directv.com</url></channel>
+<channel id="PursuitChannel.us@SD"><display-name>Pursuit Channel</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/d/d6/Pursuit_Channel_logo.png"/><url>https://directv.com</url></channel>
+<channel id="TheCowboyChannel.us@SD"><display-name>Cowboy Channel</display-name><icon src="https://i.imgur.com/0F1c7x4.png"/><url>https://directv.com</url></channel>
+<channel id="602#1301"><display-name>FanDuel TV HD</display-name><url>https://directv.com</url></channel>
+<channel id="600#5600"><display-name>SPORTS MIX HD (600)</display-name><url>https://directv.com</url></channel>
+<channel id="ZooMoo.sg@SD"><display-name>ZooMoo</display-name><icon src="https://i.imgur.com/ciTJrnl.png"/><url>https://directv.com</url></channel>
+<channel id="HustlerHD.nl@SD"><display-name>Hustler TV</display-name><icon src="https://i.imgur.com/41Ej2io.png"/><url>https://directv.com</url></channel>
+<channel id="VividTV.us@SD"><display-name>Vivid TV</display-name><icon src="https://i.imgur.com/56k2iwG.png"/><url>https://directv.com</url></channel>
+<channel id="597#597"><display-name>BraZZers TV</display-name><url>https://directv.com</url></channel>
+<channel id="BangU.us@SD"><display-name>Bang U</display-name><icon src="https://i.imgur.com/8B2SrKW.png"/><url>https://directv.com</url></channel>
+<channel id="PenthouseTV.us@SD"><display-name>Penthouse TV</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Penthouse_TV.svg/512px-Penthouse_TV.svg.png"/><url>https://directv.com</url></channel>
+<channel id="RealityKingsTV.us@SD"><display-name>Reality Kings</display-name><icon src="https://i.imgur.com/HaR7ODC.png"/><url>https://directv.com</url></channel>
+<channel id="593#593"><display-name>Adult Billboard IPPV Ch 593</display-name><url>https://directv.com</url></channel>
+<channel id="592#3452"><display-name>Adult All Access Pass Ch. 592</display-name><url>https://directv.com</url></channel>
+<channel id="PeruMagico.pe@SD"><display-name>Peru Magico</display-name><icon src="https://i.imgur.com/Z4ELxRP.png"/><url>https://directv.com</url></channel>
+<channel id="Ovation.us@SD"><display-name>Ovation HD</display-name><icon src="https://i.imgur.com/A3o9gvc.png"/><url>https://directv.com</url></channel>
+<channel id="591#2376"><display-name>Adult All Access Pass Ch. 591</display-name><url>https://directv.com</url></channel>
+<channel id="588#588"><display-name>Hustler Monthly Offer</display-name><url>https://directv.com</url></channel>
+<channel id="PenthouseTVMonthlyOffer.us@SD"><display-name>Penthouse TV Monthly Offer</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Penthouse_TV.svg/512px-Penthouse_TV.svg.png"/><url>https://directv.com</url></channel>
+<channel id="VividTVMonthlyOffer.us@SD"><display-name>Vivid TV Monthly Offer</display-name><icon src="https://i.imgur.com/f404DUg.png"/><url>https://directv.com</url></channel>
+<channel id="584#197"><display-name>Adult PPV - Ch. 584</display-name><url>https://directv.com</url></channel>
+<channel id="583#196"><display-name>Adult PPV - Ch. 583</display-name><url>https://directv.com</url></channel>
+<channel id="582#195"><display-name>Adult PPV - Ch. 582</display-name><url>https://directv.com</url></channel>
+<channel id="581#590"><display-name>Hustler &amp; Playboy TV Offers</display-name><url>https://directv.com</url></channel>
+<channel id="HolaTV.us@SD"><display-name>Hola TV</display-name><icon src="https://i.imgur.com/zfVbp7d.png"/><url>https://directv.com</url></channel>
+<channel id="TeleCentro.us@SD"><display-name>TeleCentro</display-name><icon src="https://i.imgur.com/5k1WQyn.png"/><url>https://directv.com</url></channel>
+<channel id="578#6427"><display-name>Playboy en Espanol 578</display-name><url>https://directv.com</url></channel>
+<channel id="577#8453"><display-name>Playboy 2 (577)</display-name><url>https://directv.com</url></channel>
+<channel id="PlayboyTV.us@SD"><display-name>Playboy TV HD</display-name><icon src="https://i.imgur.com/clpxgYh.png"/><url>https://directv.com</url></channel>
+<channel id="PlayboyTVMonthlyOffer.us@SD"><display-name>Playboy TV Monthly Offer</display-name><icon src="https://i.imgur.com/5di4Nis.png"/><url>https://directv.com</url></channel>
+<channel id="574#575"><display-name>Commercial Special Events 574</display-name><url>https://directv.com</url></channel>
+<channel id="573#3708"><display-name>Shorts TV HD</display-name><url>https://directv.com</url></channel>
+<channel id="MTVLive.us@SD"><display-name>MTV Live HD</display-name><icon src="https://i.imgur.com/3UByLqb.png"/><url>https://directv.com</url></channel>
+<channel id="CentroamericaTV.us@SD"><display-name>Centroamerica TV</display-name><icon src="https://i.imgur.com/qxzyUwg.png"/><url>https://directv.com</url></channel>
+<channel id="CrimePlusInvestigation.us@SD"><display-name>Crime &amp; Investigation HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Crime_%2B_Investigation_Logo_10.2019.svg"/><url>https://directv.com</url></channel>
+<channel id="SmithsonianChannel.us@East"><display-name>Smithsonian Channel HD</display-name><icon src="https://i.postimg.cc/C583G2Qt/smithsonianchannel.png"/><url>https://directv.com</url></channel>
+<channel id="SonyMovies.us@SD"><display-name>Sony Movies</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/512px-Sony_Movies_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="HDNetMovies.us@SD"><display-name>HDNET MOVIES</display-name><icon src="https://i.imgur.com/FC7pmb1.png"/><url>https://directv.com</url></channel>
+<channel id="HallmarkMoviesMysteries.us@East"><display-name>Hallmark Movies &amp; Mysteries HD</display-name><icon src="https://i.imgur.com/GPRGA9C.png"/><url>https://directv.com</url></channel>
+<channel id="HallmarkDrama.us@SD"><display-name>Hallmark Drama HD</display-name><url>https://directv.com</url></channel>
+<channel id="SoYummy.us@SD"><display-name>So Yummy</display-name><icon src="https://i.imgur.com/ju2NyoL.png"/><url>https://directv.com</url></channel>
+<channel id="DogTV.us@SD"><display-name>Dog TV</display-name><icon src="https://i.imgur.com/dRKis0F.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreSpanish.us@East"><display-name>Starz Encore en Espanol</display-name><icon src="https://i.imgur.com/5aibRWY.png"/><url>https://directv.com</url></channel>
+<channel id="560#536"><display-name>MGM+ Marquee HD</display-name><url>https://directv.com</url></channel>
+<channel id="MGMPlusHits.us@East"><display-name>MGM+ Hits East</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/MGM%2B_Hits_2023.svg/512px-MGM%2B_Hits_2023.svg.png"/><url>https://directv.com</url></channel>
+<channel id="558#534"><display-name>MGM+ HD</display-name><url>https://directv.com</url></channel>
+<channel id="AMCPlus.us@SD"><display-name>AMC+ HD</display-name><icon src="https://i.imgur.com/abtANyj.png"/><url>https://directv.com</url></channel>
+<channel id="Pop.us@East"><display-name>POP HD</display-name><icon src="https://i.imgur.com/85uUcGU.png"/><url>https://directv.com</url></channel>
+<channel id="Flix.us@East"><display-name>Flix</display-name><icon src="https://i.imgur.com/N1d23J3.png"/><url>https://directv.com</url></channel>
+<channel id="TheMovieChannelXtra.us@East"><display-name>The Movie Channel Xtra HD</display-name><icon src="https://i.imgur.com/J3qpQ8X.png"/><url>https://directv.com</url></channel>
+<channel id="TheMovieChannel.us@West"><display-name>The Movie Channel West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/The_Movie_Channel.svg/512px-The_Movie_Channel.svg.png"/><url>https://directv.com</url></channel>
+<channel id="TheMovieChannel.us@East"><display-name>The Movie Channel East HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/The_Movie_Channel.svg/512px-The_Movie_Channel.svg.png"/><url>https://directv.com</url></channel>
+<channel id="BabyTV.uk@UK"><display-name>BabyTV</display-name><icon src="https://i.imgur.com/4BDJ5FT.png"/><url>https://directv.com</url></channel>
+<channel id="ShowtimeFamilyZone.us@East"><display-name>Showtime FamilyZone</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Showtime.svg/512px-Showtime.svg.png"/><url>https://directv.com</url></channel>
+<channel id="ShowtimeNext.us@East"><display-name>Showtime Next HD</display-name><icon src="https://i.imgur.com/1Ak2MX2.png"/><url>https://directv.com</url></channel>
+<channel id="ShowtimeShowcase.us@East"><display-name>Showtime Showcase HD</display-name><icon src="https://i.imgur.com/bty4UCb.png"/><url>https://directv.com</url></channel>
+<channel id="ShowtimeExtreme.us@East"><display-name>Showtime Extreme HD</display-name><icon src="https://i.imgur.com/byJNJdm.png"/><url>https://directv.com</url></channel>
+<channel id="ShoxBet.us@East"><display-name>SHOxBET</display-name><url>https://directv.com</url></channel>
+<channel id="CineNostalgia.us@SD"><display-name>Cine Nostalgia</display-name><icon src="https://i.imgur.com/LLwppwB.png"/><url>https://directv.com</url></channel>
+<channel id="Showtime2.us@East"><display-name>SHOWTIME 2</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Showtime.svg/512px-Showtime.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Showtime.us@West"><display-name>Showtime HD West</display-name><icon src="https://i.imgur.com/Or0LKsu.png"/><url>https://directv.com</url></channel>
+<channel id="Showtime.us@East"><display-name>Showtime HD East</display-name><icon src="https://i.imgur.com/Or0LKsu.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreFamily.us@East"><display-name>STARZ Encore Family</display-name><icon src="https://i.imgur.com/B9Yfzdp.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreAction.us@East"><display-name>STARZ Encore Action HD</display-name><icon src="https://i.imgur.com/wIf4X0i.png"/><url>https://directv.com</url></channel>
+<channel id="CineLatino.mx@SD"><display-name>Cinelatino</display-name><icon src="https://i.imgur.com/2V0R0xT.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreBlack.us@East"><display-name>STARZ Encore Black</display-name><icon src="https://i.imgur.com/nkQgShJ.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreSuspense.us@East"><display-name>STARZ Encore Suspense</display-name><icon src="https://i.imgur.com/BI4Ksr1.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreWesterns.us@East"><display-name>STARZ Encore Westerns</display-name><icon src="https://i.imgur.com/Eo6yLpN.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncoreClassic.us@East"><display-name>STARZ Encore Classic</display-name><icon src="https://i.imgur.com/L6GjoS4.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncore.us@West"><display-name>STARZ Encore West</display-name><icon src="https://i.imgur.com/5ieoKO1.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEncore.us@East"><display-name>STARZ Encore HD</display-name><icon src="https://i.imgur.com/5ieoKO1.png"/><url>https://directv.com</url></channel>
+<channel id="CineEstelar.us@SD"><display-name>Cine Estelar</display-name><icon src="https://i.imgur.com/yySH37j.png"/><url>https://directv.com</url></channel>
+<channel id="StarzCinema.us@East"><display-name>STARZ Cinema HD</display-name><icon src="https://i.imgur.com/ghzzKoT.png"/><url>https://directv.com</url></channel>
+<channel id="StarzInBlack.us@East"><display-name>STARZ in Black HD</display-name><icon src="https://i.imgur.com/g51a2le.png"/><url>https://directv.com</url></channel>
+<channel id="StarzEdge.us@East"><display-name>STARZ Edge HD</display-name><icon src="https://i.imgur.com/MvH3Cz2.png"/><url>https://directv.com</url></channel>
+<channel id="Logo.us@East"><display-name>Logo</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_TV_2015.svg/512px-Logo_TV_2015.svg.png"/><url>https://directv.com</url></channel>
+<channel id="StarzComedy.us@East"><display-name>STARZ Comedy HD</display-name><icon src="https://i.imgur.com/JpKvjZe.png"/><url>https://directv.com</url></channel>
+<channel id="StarzKidsFamily.us@East"><display-name>STARZ Kids &amp; Family HD</display-name><icon src="https://i.imgur.com/eE9FzEP.png"/><url>https://directv.com</url></channel>
+<channel id="Starz.us@West"><display-name>STARZ West HD</display-name><icon src="https://i.imgur.com/N7oSm4d.png"/><url>https://directv.com</url></channel>
+<channel id="Atreseries.es@SD"><display-name>Atreseries</display-name><icon src="https://i.postimg.cc/T1XWFVNs/atreseries.png"/><url>https://directv.com</url></channel>
+<channel id="Starz.us@East"><display-name>STARZ East HD</display-name><icon src="https://i.imgur.com/N7oSm4d.png"/><url>https://directv.com</url></channel>
+<channel id="MaxLatino.us@SD"><display-name>Cinemax Latino HD</display-name><icon src="https://i.imgur.com/GfsmfGK.png"/><url>https://directv.com</url></channel>
+<channel id="ThrillerMax.us@East"><display-name>ThrillerMAX HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/ThrillerMax_Logo.svg/512px-ThrillerMax_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="MovieMax.us@East"><display-name>MovieMAX</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/MovieMax_Logo.svg/512px-MovieMax_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="5StarMax.us@East"><display-name>5StarMAX HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/5StarMax_Logo.svg/512px-5StarMax_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="CNNenEspanol.us@SD"><display-name>CNN en Espanol</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg/512px-Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg.png"/><url>https://directv.com</url></channel>
+<channel id="VICETV.us@SD"><display-name>VICE HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Vice_TV_logo.svg/512px-Vice_TV_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="NTN24.co@SD"><display-name>NTN 24</display-name><icon src="https://i.imgur.com/UoKmSAP.png"/><url>https://directv.com</url></channel>
+<channel id="CaracolInternacional.co@SD"><display-name>Caracol TV</display-name><icon src="https://i.imgur.com/L4FsBCh.png"/><url>https://directv.com</url></channel>
+<channel id="NuestraTeleInternacional.co@SD"><display-name>Nuestra Tele</display-name><icon src="https://i.imgur.com/JoGQqmP.png"/><url>https://directv.com</url></channel>
+<channel id="VideoRola.mx@SD"><display-name>Videorola</display-name><icon src="https://i.imgur.com/qGoxWCA.png"/><url>https://directv.com</url></channel>
+<channel id="270#261"><display-name>IDEA Channel 270</display-name><url>https://directv.com</url></channel>
+<channel id="WAPADT1.pr@SD"><display-name>WAPA America</display-name><icon src="https://i.imgur.com/kqq7tD9.png"/><url>https://directv.com</url></channel>
+<channel id="DiscoveryenEspanol.us@SD"><display-name>Discovery en Espanol</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/512px-2019_Discovery_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="History.us@East"><display-name>History HD</display-name><icon src="https://i.postimg.cc/4dr0YQXw/history.png"/><url>https://directv.com</url></channel>
+<channel id="412#5442"><display-name>Multimedios</display-name><url>https://directv.com</url></channel>
+<channel id="TelefeInternacional.ar@SD"><display-name>Telefe</display-name><icon src="https://i.imgur.com/HNcCX3h.png"/><url>https://directv.com</url></channel>
+<channel id="NBCUniverso.us@East"><display-name>Universo HD</display-name><icon src="https://i.imgur.com/RZ8pIKe.png"/><url>https://directv.com</url></channel>
+<channel id="268#268"><display-name>BEST Channel 268</display-name><url>https://directv.com</url></channel>
+<channel id="Venevision.ve@SD"><display-name>VePlus</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logotipo_de_Venevisi%C3%B3n.svg/512px-Logotipo_de_Venevisi%C3%B3n.svg.png"/><url>https://directv.com</url></channel>
+<channel id="UniMas.us@West"><display-name>UniMas West HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Logo_UniM%C3%A1s_2021.svg/512px-Logo_UniM%C3%A1s_2021.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FYI.us@East"><display-name>FYI HD</display-name><icon src="https://i.imgur.com/PggQk7F.png"/><url>https://directv.com</url></channel>
+<channel id="Telemundo.us@West"><display-name>Telemundo West</display-name><icon src="https://i.postimg.cc/FR3pDQhj/telemundo.png"/><url>https://directv.com</url></channel>
+<channel id="Telemundo.us@East"><display-name>Telemundo East</display-name><icon src="https://i.postimg.cc/FR3pDQhj/telemundo.png"/><url>https://directv.com</url></channel>
+<channel id="MegaTV.us@SD"><display-name>MegaTV HD</display-name><icon src="https://i.imgur.com/MiPdjSX.png"/><url>https://directv.com</url></channel>
+<channel id="AE.us@East"><display-name>A&amp;E HD</display-name><icon src="https://i.postimg.cc/8c726vmZ/ae.png"/><url>https://directv.com</url></channel>
+<channel id="Galavision.us@East"><display-name>Galavision HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Galavision_Logo_2013.svg/512px-Galavision_Logo_2013.svg.png"/><url>https://directv.com</url></channel>
+<channel id="694#3640"><display-name>Bally Sports San Diego Extra 2</display-name><url>https://directv.com</url></channel>
+<channel id="Univision.us@West"><display-name>Univision West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Univision_2019.svg/512px-Logo_Univision_2019.svg.png"/><url>https://directv.com</url></channel>
+<channel id="BBCAmerica.us@East"><display-name>BBC America HD</display-name><icon src="https://i.imgur.com/pTiiPz0.png"/><url>https://directv.com</url></channel>
+<channel id="Univision.us@East"><display-name>Univision East HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Univision_2019.svg/512px-Logo_Univision_2019.svg.png"/><url>https://directv.com</url></channel>
+<channel id="401#2543"><display-name>Aqui</display-name><url>https://directv.com</url></channel>
+<channel id="KTTVDT1.us@SD"><display-name>KTTV (Los Angeles) FOX HD West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="263#347"><display-name>Get It Infomercial</display-name><url>https://directv.com</url></channel>
+<channel id="WNYWDT1.us@SD"><display-name>WNYW (New York) FOX HD East</display-name><icon src="https://i.imgur.com/zZd9Tkt.png"/><url>https://directv.com</url></channel>
+<channel id="262#8134"><display-name>XPLOR (262-1)</display-name><url>https://directv.com</url></channel>
+<channel id="KABCDT1.us@SD"><display-name>KABC (Los Angeles) ABC HD West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/KABC-TV-Logo-2021.png/512px-KABC-TV-Logo-2021.png"/><url>https://directv.com</url></channel>
+<channel id="262#262"><display-name>VISION TV Channel 262</display-name><url>https://directv.com</url></channel>
+<channel id="WABCDT1.us@SD"><display-name>WABC (New York) ABC HD East</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/WABC_TV_New_2021.svg/512px-WABC_TV_New_2021.svg.png"/><url>https://directv.com</url></channel>
+<channel id="DiscoveryLife.us@SD"><display-name>Discovery Life</display-name><icon src="https://i.imgur.com/ObPFgT8.png"/><url>https://directv.com</url></channel>
+<channel id="KTLADT1.us@SD"><display-name>KTLA CW West</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_CW_2024.svg/512px-The_CW_2024.svg.png"/><url>https://directv.com</url></channel>
+<channel id="WeTV.us@East"><display-name>WE tv HD</display-name><icon src="https://i.postimg.cc/R0jgzLdQ/wetv.png"/><url>https://directv.com</url></channel>
+<channel id="CWPlus.us@East"><display-name>CW Plus</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/The_CW_2024.svg/512px-The_CW_2024.svg.png"/><url>https://directv.com</url></channel>
+<channel id="393#8209"><display-name>KNBC (Los Angeles) NBC HD West</display-name><url>https://directv.com</url></channel>
+<channel id="393#383"><display-name>KNBC (Los Angeles) NBC West</display-name><url>https://directv.com</url></channel>
+<channel id="WNBCDT1.us@SD"><display-name>WNBC (New York) NBC HD East</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/WNBC_4_NY.svg/512px-WNBC_4_NY.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FXX.us@East"><display-name>FXX HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/FXX_Logo.svg/512px-FXX_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="KCBSDT1.us@SD"><display-name>KCBS (Los Angeles) CBS HD West</display-name><icon src="https://i.imgur.com/RIFC1Y6.jpg"/><url>https://directv.com</url></channel>
+<channel id="WCBSDT1.us@SD"><display-name>WCBS (New York) CBS HD East</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/CBS_2.svg/512px-CBS_2.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FXMovieChannel.us@SD"><display-name>FX Movie Channel HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FXM_Logo.svg/512px-FXM_Logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="PBS.us@East"><display-name>PBSNET</display-name><icon src="https://i.postimg.cc/ZnL6G6KV/pbs.png"/><url>https://directv.com</url></channel>
+<channel id="JBS.us@SD"><display-name>JBS</display-name><icon src="https://yt3.googleusercontent.com/ytc/AIdro_lDWY-W9dD7UvLlp1NuWLJs1wV6t_KjeOT-1iVVIGuLZ8U=s512-c-k-c0x00ffffff-no-rj"/><url>https://directv.com</url></channel>
+<channel id="386#8983"><display-name>FM HD</display-name><url>https://directv.com</url></channel>
+<channel id="TCM.us@East"><display-name>TCM HD</display-name><icon src="https://i.postimg.cc/c4zJsTk2/tcm.png"/><url>https://directv.com</url></channel>
+<channel id="Revolt.us@SD"><display-name>Revolt HD</display-name><icon src="https://i.imgur.com/eaYnGpH.png"/><url>https://directv.com</url></channel>
+<channel id="JusticeCentralTV.us@SD"><display-name>Justice Central HD</display-name><icon src="https://i.imgur.com/peuHszg.png"/><url>https://directv.com</url></channel>
+<channel id="ComedyTV.us@SD"><display-name>Comedy TV HD</display-name><icon src="https://i.imgur.com/KLfXnba.png"/><url>https://directv.com</url></channel>
+<channel id="Aspire.us@SD"><display-name>ASPIRE (HD)</display-name><icon src="https://i.imgur.com/TOM5qO6.png"/><url>https://directv.com</url></channel>
+<channel id="255#4190"><display-name>XTRA Network</display-name><url>https://directv.com</url></channel>
+<channel id="ImpactNetwork.us@SD"><display-name>IMPACT TV</display-name><icon src="https://i.imgur.com/57NH9sS.png"/><url>https://directv.com</url></channel>
+<channel id="UniversalLivingFaithNetwork.us@SD"><display-name>Living Faith Network</display-name><icon src="https://i.imgur.com/Yb4ILR8.png"/><url>https://directv.com</url></channel>
+<channel id="AMC.us@East"><display-name>AMC HD</display-name><icon src="https://i.postimg.cc/ncGLcbMM/amc.png"/><url>https://directv.com</url></channel>
+<channel id="NRBTV.us@SD"><display-name>NRB</display-name><icon src="https://i.imgur.com/2PL1Au7.png"/><url>https://directv.com</url></channel>
+<channel id="668#5668"><display-name>Bally Sports North HD</display-name><url>https://directv.com</url></channel>
+<channel id="TCT.us@SD"><display-name>TCT Network</display-name><icon src="https://i.imgur.com/J5iRMgi.png"/><url>https://directv.com</url></channel>
+<channel id="CTN.us@SD"><display-name>Christian Television Net</display-name><icon src="https://i.imgur.com/mHCabmJ.png"/><url>https://directv.com</url></channel>
+<channel id="LinkTV.us@SD"><display-name>LinkTV</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LinkTV-2018.svg/512px-LinkTV-2018.svg.png"/><url>https://directv.com</url></channel>
+<channel id="LifetimeMovies.us@East"><display-name>LMN HD</display-name><icon src="https://i.imgur.com/BWmqYTO.png"/><url>https://directv.com</url></channel>
+<channel id="BYUTV.us@SD"><display-name>BYUtv</display-name><icon src="https://i.imgur.com/mruGyuu.png"/><url>https://directv.com</url></channel>
+<channel id="TheWordNetwork.us@SD"><display-name>The WORD Network</display-name><icon src="https://i.imgur.com/ltFBrrj.png"/><url>https://directv.com</url></channel>
+<channel id="372#394"><display-name>Trinity Broadcast Network HD</display-name><url>https://directv.com</url></channel>
+<channel id="371#371"><display-name>TBN Inspire</display-name><url>https://directv.com</url></channel>
+<channel id="Lifetime.us@East"><display-name>Lifetime HD</display-name><icon src="https://i.postimg.cc/pLPxqRKx/lifetime.png"/><url>https://directv.com</url></channel>
+<channel id="EWTN.us@English"><display-name>EWTN</display-name><icon src="https://i.imgur.com/sua70RO.png"/><url>https://directv.com</url></channel>
+<channel id="DaystarTV.us@SD"><display-name>Daystar</display-name><icon src="https://i.imgur.com/IjzCv8f.png"/><url>https://directv.com</url></channel>
+<channel id="HopeChannelNorthAmerica.us@SD"><display-name>Hope Channel</display-name><icon src="https://i.imgur.com/2qXqajS.png"/><url>https://directv.com</url></channel>
+<channel id="WorldHarvestTV.us@SD"><display-name>World Harvest Television</display-name><icon src="https://i.imgur.com/xtbkDDN.png"/><url>https://directv.com</url></channel>
+<channel id="Oxygen.us@East"><display-name>Oxygen True Crime HD</display-name><icon src="https://i.postimg.cc/KjCQqG1N/oxygen.png"/><url>https://directv.com</url></channel>
+<channel id="366#306"><display-name>VICTORY</display-name><url>https://directv.com</url></channel>
+<channel id="GODTV.uk@SD"><display-name>God TV</display-name><icon src="https://i.imgur.com/hW4g2oe.png"/><url>https://directv.com</url></channel>
+<channel id="INSP.us@SD"><display-name>INSP</display-name><icon src="https://i.imgur.com/YgOC51j.png"/><url>https://directv.com</url></channel>
+<channel id="250#3094"><display-name>SECRET TV (250)</display-name><url>https://directv.com</url></channel>
+<channel id="363#3775"><display-name>GEB America</display-name><url>https://directv.com</url></channel>
+<channel id="654#5655"><display-name>Bally Sports Florida Extra HD</display-name><url>https://directv.com</url></channel>
+<channel id="TheWeatherChannel.us@SD"><display-name>The Weather Channel HD</display-name><icon src="https://i.imgur.com/PIaNjfa.png"/><url>https://directv.com</url></channel>
+<channel id="ComedyCentral.us@East"><display-name>Comedy Central HD</display-name><icon src="https://i.postimg.cc/Dysd5c51/comedycentral.png"/><url>https://directv.com</url></channel>
+<channel id="AccuWeatherNOW.us@SD"><display-name>AccuWeather HD</display-name><icon src="https://i.imgur.com/M8wbVYK.png"/><url>https://directv.com</url></channel>
+<channel id="ComedyCentral.us@West"><display-name>Comedy Central West HD</display-name><icon src="https://i.postimg.cc/Dysd5c51/comedycentral.png"/><url>https://directv.com</url></channel>
+<channel id="FoxNewsChannel.us@SD"><display-name>FOX News Channel HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FoxBusinessNetwork.us@SD"><display-name>Fox Business Network HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fox_Business.svg/512px-Fox_Business.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FX.us@East"><display-name>FX HD</display-name><icon src="https://i.imgur.com/ZScwrpi.png"/><url>https://directv.com</url></channel>
+<channel id="358#2601"><display-name>CNNi</display-name><url>https://directv.com</url></channel>
+<channel id="CNBCWorld.us@SD"><display-name>CNBC World</display-name><icon src="https://zap2it.tmsimg.com/h3/NowShowing/26849/s26849_ll_h15_ab.png?w=512"/><url>https://directv.com</url></channel>
+<channel id="356#3526"><display-name>MSNBC HD</display-name><url>https://directv.com</url></channel>
+<channel id="MSNBC.us@SD"><display-name>MSNBC</display-name><icon src="https://i.imgur.com/kGUR6NE.png"/><url>https://directv.com</url></channel>
+<channel id="TBS.us@East"><display-name>TBS HD</display-name><icon src="https://i.postimg.cc/Pf2x7dWt/tbs.png"/><url>https://directv.com</url></channel>
+<channel id="CNBC.us@SD"><display-name>CNBC HD</display-name><icon src="https://i.postimg.cc/L8LfB69D/cnbc.png"/><url>https://directv.com</url></channel>
+<channel id="TBS.us@West"><display-name>TBS West HD</display-name><icon src="https://i.postimg.cc/Pf2x7dWt/tbs.png"/><url>https://directv.com</url></channel>
+<channel id="CheddarNews.us@SD"><display-name>Cheddar News</display-name><icon src="https://i.imgur.com/tuP9GW8.png"/><url>https://directv.com</url></channel>
+<channel id="BloombergTV.us@US"><display-name>Bloomberg TV HD</display-name><icon src="https://i.imgur.com/OuogLHx.png"/><url>https://directv.com</url></channel>
+<channel id="NASATVPublic.us@SD"><display-name>NASA TV</display-name><icon src="https://i.imgur.com/ECPgLf6.png"/><url>https://directv.com</url></channel>
+<channel id="truTV.us@East"><display-name>truTV HD</display-name><icon src="https://i.postimg.cc/dQTpxLsK/trutv.png"/><url>https://directv.com</url></channel>
+<channel id="CSPAN2.us@SD"><display-name>CSPAN 2</display-name><icon src="https://i.imgur.com/9B6XIQC.png"/><url>https://directv.com</url></channel>
+<channel id="CSPAN.us@SD"><display-name>CSPAN</display-name><icon src="https://i.postimg.cc/wTcR7404/cspan.png"/><url>https://directv.com</url></channel>
+<channel id="NewsmaxTV.us@SD"><display-name>Newsmax TV</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/512px-Newsmax_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="TNT.us@West"><display-name>TNT West HD</display-name><icon src="https://i.postimg.cc/mk9zWbPr/tnt.png"/><url>https://directv.com</url></channel>
+<channel id="FreeSpeechTV.us@SD"><display-name>Free Speech TV</display-name><icon src="https://i.imgur.com/Qq6heRq.png"/><url>https://directv.com</url></channel>
+<channel id="BBCNews.uk@NorthAmerica"><display-name>BBC World News HD</display-name><icon src="https://i.imgur.com/vSz2WEp.png"/><url>https://directv.com</url></channel>
+<channel id="TNT.us@East"><display-name>TNT HD</display-name><icon src="https://i.postimg.cc/mk9zWbPr/tnt.png"/><url>https://directv.com</url></channel>
+<channel id="345#551"><display-name>RFD HD TV</display-name><url>https://directv.com</url></channel>
+<channel id="SBNTV.us@SD"><display-name>Son Life Broadcasting HD</display-name><icon src="https://i.imgur.com/tspT2dF.png"/><url>https://directv.com</url></channel>
+<channel id="343#499"><display-name>i24 News</display-name><url>https://directv.com</url></channel>
+<channel id="342#6537"><display-name>theGrio</display-name><url>https://directv.com</url></channel>
+<channel id="Syfy.us@East"><display-name>SYFYHD</display-name><icon src="https://i.imgur.com/4fMWhUE.png"/><url>https://directv.com</url></channel>
+<channel id="CleoTV.us@SD"><display-name>Cleo TV</display-name><icon src="https://i.imgur.com/US0T6DC.png"/><url>https://directv.com</url></channel>
+<channel id="AXSTV.us@SD"><display-name>AXS TV HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AXS_TV_logo.svg/512px-AXS_TV_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Fuse.us@East"><display-name>Fuse HD</display-name><icon src="https://i.imgur.com/mijRpPQ.jpg"/><url>https://directv.com</url></channel>
+<channel id="UpTV.us@SD"><display-name>UPTV</display-name><icon src="https://i.imgur.com/AvR9LSn.png"/><url>https://directv.com</url></channel>
+<channel id="243#243"><display-name>XPLOR</display-name><url>https://directv.com</url></channel>
+<channel id="337#102"><display-name>SEEK HD</display-name><url>https://directv.com</url></channel>
+<channel id="MTVClassic.us@East"><display-name>MTV Classic</display-name><icon src="https://i.postimg.cc/fRfzd34s/mtvclassic.png"/><url>https://directv.com</url></channel>
+<channel id="USANetwork.us@East"><display-name>USA Network HD</display-name><icon src="https://i.postimg.cc/3rzcT7SQ/usanetwork.png"/><url>https://directv.com</url></channel>
+<channel id="VH1.us@East"><display-name>VH1 HD</display-name><icon src="https://i.postimg.cc/hGhLvQvy/vh1.png"/><url>https://directv.com</url></channel>
+<channel id="IFC.us@East"><display-name>IFC HD</display-name><icon src="https://i.imgur.com/bQdkyF9.png"/><url>https://directv.com</url></channel>
+<channel id="ParamountNetwork.us@East"><display-name>Paramount Network HD</display-name><icon src="https://i.postimg.cc/Hxy2hJyh/paramountnetwork.png"/><url>https://directv.com</url></channel>
+<channel id="332#2455"><display-name>MTV2 HD</display-name><url>https://directv.com</url></channel>
+<channel id="MTV2.us@East"><display-name>MTV2</display-name><icon src="https://i.postimg.cc/W48BNrBD/mtv2.png"/><url>https://directv.com</url></channel>
+<channel id="331#8218"><display-name>MTV HD</display-name><url>https://directv.com</url></channel>
+<channel id="331#2600"><display-name>MTV West HD</display-name><url>https://directv.com</url></channel>
+<channel id="MTV.us@East"><display-name>MTV</display-name><icon src="https://i.postimg.cc/4d3rmyGW/mtv.png"/><url>https://directv.com</url></channel>
+<channel id="BETHer.us@East"><display-name>BET Her</display-name><icon src="https://i.imgur.com/oafsrlo.png"/><url>https://directv.com</url></channel>
+<channel id="BET.us@West"><display-name>BET West HD</display-name><icon src="https://i.imgur.com/copIbc9.png"/><url>https://directv.com</url></channel>
+<channel id="BET.us@East"><display-name>BET HD</display-name><icon src="https://i.imgur.com/copIbc9.png"/><url>https://directv.com</url></channel>
+<channel id="SundanceTV.us@East"><display-name>SundanceTV HD</display-name><icon src="https://i.postimg.cc/MT3Dshtd/sundancetv.png"/><url>https://directv.com</url></channel>
+<channel id="TVOne.us@SD"><display-name>TV One HD</display-name><icon src="https://i.imgur.com/tthm8Q5.png"/><url>https://directv.com</url></channel>
+<channel id="CMT.us@East"><display-name>CMT HD</display-name><icon src="https://i.imgur.com/S7DOpdY.png"/><url>https://directv.com</url></channel>
+<channel id="580#459"><display-name>BraZZers TV Monthly Offer</display-name><url>https://directv.com</url></channel>
+<channel id="Reelz.us@SD"><display-name>ReelzChannel HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Reelz.svg/512px-Reelz.svg.png"/><url>https://directv.com</url></channel>
+<channel id="GreatAmericanFamily.us@SD"><display-name>Great American Family HD</display-name><icon src="https://i.imgur.com/TzvnHDn.png"/><url>https://directv.com</url></channel>
+<channel id="325#1307"><display-name>FRESH</display-name><url>https://directv.com</url></channel>
+<channel id="324#3095"><display-name>SECRET TV</display-name><url>https://directv.com</url></channel>
+<channel id="324#324"><display-name>RENEW TV (324)</display-name><url>https://directv.com</url></channel>
+<channel id="FamilyEntertainmentTV.us@SD"><display-name>Family Entertainment Television</display-name><icon src="https://i.imgur.com/EpDi2ry.png"/><url>https://directv.com</url></channel>
+<channel id="323#110"><display-name>Go4IT</display-name><url>https://directv.com</url></channel>
+<channel id="322#517"><display-name>NHK World News</display-name><url>https://directv.com</url></channel>
+<channel id="ScientologyNetwork.us@SD"><display-name>Scientology Network</display-name><icon src="https://i.imgur.com/HOYF8NA.png"/><url>https://directv.com</url></channel>
+<channel id="319#319"><display-name>NEW TV (319)</display-name><url>https://directv.com</url></channel>
+<channel id="QVC3.us@SD"><display-name>QVC3</display-name><icon src="https://i.imgur.com/edswdOO.png"/><url>https://directv.com</url></channel>
+<channel id="314#8067"><display-name>VALU</display-name><url>https://directv.com</url></channel>
+<channel id="313#367"><display-name>Jewelry Television</display-name><url>https://directv.com</url></channel>
+<channel id="HallmarkChannel.us@East"><display-name>Hallmark Channel HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hallmark_Channel.svg/512px-Hallmark_Channel.svg.png"/><url>https://directv.com</url></channel>
+<channel id="Freeform.us@East"><display-name>Freeform HD</display-name><icon src="https://i.imgur.com/BGAGeIf.png"/><url>https://directv.com</url></channel>
+<channel id="310#4069"><display-name>HSN2</display-name><url>https://directv.com</url></channel>
+<channel id="309#328"><display-name>SALE Network</display-name><url>https://directv.com</url></channel>
+<channel id="308#343"><display-name>CRAVE</display-name><url>https://directv.com</url></channel>
+<channel id="307#3528"><display-name>NewsNation HD</display-name><url>https://directv.com</url></channel>
+<channel id="307#307"><display-name>NewsNation</display-name><url>https://directv.com</url></channel>
+<channel id="IONTV.us@East"><display-name>ION Television East HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ion_logo.svg/512px-Ion_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="TVLand.us@East"><display-name>TV Land HD</display-name><icon src="https://i.imgur.com/VNNS4mF.png"/><url>https://directv.com</url></channel>
+<channel id="325#8075"><display-name>Jewish Life TV</display-name><url>https://directv.com</url></channel>
+<channel id="Bravo.us@East"><display-name>Bravo HD</display-name><icon src="https://i.imgur.com/JmTIRLF.png"/><url>https://directv.com</url></channel>
+<channel id="E.us@East"><display-name>E! HD</display-name><icon src="https://i.imgur.com/TWFDkap.png"/><url>https://directv.com</url></channel>
+<channel id="Tastemade.us@US"><display-name>Tastemade</display-name><icon src="https://i.imgur.com/xP7Ehn8.png"/><url>https://directv.com</url></channel>
+<channel id="234#234"><display-name>WOW TV 234</display-name><url>https://directv.com</url></channel>
+<channel id="GameShowNetwork.us@East"><display-name>Game Show Network HD</display-name><icon src="https://www.gameshownetwork.com/storage/app/media/2020/Navigation/gsn_logo.jpg"/><url>https://directv.com</url></channel>
+<channel id="CookingChannel.us@SD"><display-name>Cooking Channel HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Cooking_Channel.svg/512px-Cooking_Channel.svg.png"/><url>https://directv.com</url></channel>
+<channel id="FoodNetwork.us@East"><display-name>Food Network HD</display-name><icon src="https://i.postimg.cc/gcSDtJvH/foodnetwork.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce6.us@SD"><display-name>NHL Center Ice 776 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce5.us@SD"><display-name>NHL Center Ice 775 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce4.us@SD"><display-name>NHL Center Ice 774 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce3.us@SD"><display-name>NHL Center Ice 773 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce2.us@SD"><display-name>NHL Center Ice 771</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="769#3830"><display-name>You are all set to watch the 2022-23 season of NHL CENTER ICE</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce1.us@SD"><display-name>NHL Center Ice 769</display-name><icon src="https://i.imgur.com/yS3sqIv.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass8.us@SD"><display-name>NBA League Pass 768 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="2088#4515"><display-name>MBN (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass6.us@SD"><display-name>NBA League Pass 766 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass5.us@SD"><display-name>NBA League Pass 765 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="750#4075"><display-name>NBA LP Authorization Slide</display-name><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass4.us@SD"><display-name>NBA League Pass 750</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass3.us@SD"><display-name>NBA League Pass 749</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="2070#4512"><display-name>ANC (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2066#4551"><display-name>DZMM (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2063#4530"><display-name>Cinema One Global</display-name><url>https://directv.com</url></channel>
+<channel id="2061#4544"><display-name>GMA Pinoy TV</display-name><url>https://directv.com</url></channel>
+<channel id="2053#4556"><display-name>CGTN 2053 (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="CharmingChina.us@SD"><display-name>Charming China 2055</display-name><icon src="https://i.imgur.com/15XzghY.png"/><url>https://directv.com</url></channel>
+<channel id="2051#4509"><display-name>Phoenix Info News (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2049#546"><display-name>NHK World News 2049</display-name><url>https://directv.com</url></channel>
+<channel id="2082#552"><display-name>KBS America HD</display-name><url>https://directv.com</url></channel>
+<channel id="2039#4552"><display-name>Little Saigon Radio Channel (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2036#4532"><display-name>Vietv (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2035#4560"><display-name>Vien Thao (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2021#4540"><display-name>Rai Italia</display-name><url>https://directv.com</url></channel>
+<channel id="2031#4537"><display-name>VGN TV</display-name><url>https://directv.com</url></channel>
+<channel id="2024#4538"><display-name>Radio Rai</display-name><url>https://directv.com</url></channel>
+<channel id="2023#4546"><display-name>Rai World Premium</display-name><url>https://directv.com</url></channel>
+<channel id="2020#4555"><display-name>MediaSet Italia (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="906#5828"><display-name>US Open Court Channel 4</display-name><url>https://directv.com</url></channel>
+<channel id="904#5850"><display-name>US Open Court Channel 2</display-name><url>https://directv.com</url></channel>
+<channel id="903#5864"><display-name>US Open Court Channel 1</display-name><url>https://directv.com</url></channel>
+<channel id="879#8999"><display-name>Music Choice Latin Jazz</display-name><url>https://directv.com</url></channel>
+<channel id="884#5538"><display-name>Music Choice Nature Sounds</display-name><url>https://directv.com</url></channel>
+<channel id="882#5537"><display-name>Music Choice Italian Favorites</display-name><url>https://directv.com</url></channel>
+<channel id="2071#4514"><display-name>TV5 (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="878#8924"><display-name>Music Choice Rock Latino</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceMexicana.us@SD"><display-name>Music Choice Mexicana</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceTropicales.us@SD"><display-name>Music Choice Tropicales</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoicePopLatino.us@SD"><display-name>Music Choice Pop Latino</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="861#3027"><display-name>Music Choice K-Pop</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceTeenBeats.us@SD"><display-name>Music Choice Teen Beats</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2067#4547"><display-name>Myx</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceReggae.us@SD"><display-name>Music Choice Reggae</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="860#4151"><display-name>Music Choice Workout</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceDanceEDM.us@SD"><display-name>Music Choice Dance/EDM</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="857#6445"><display-name>Music Choice Soundscapes Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="856#2251"><display-name>Music Choice New Age</display-name><url>https://directv.com</url></channel>
+<channel id="2093#4553"><display-name>RadioS</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceSmoothJazz.us@SD"><display-name>Music Choice Smooth Jazz</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="845#8440"><display-name>Music Choice Classic Dance</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRBSoul.us@SD"><display-name>Music Choice R&amp;B Soul</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoicePopCountry.us@SD"><display-name>Music Choice Pop &amp; Country</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRockHits.us@SD"><display-name>Music Choice Rock Hits</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="833#3066"><display-name>Music Choice Classic Rock Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceIndie.us@SD"><display-name>Music Choice Indie</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceGospel.us@SD"><display-name>Music Choice Gospel</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceHipHopandRB.us@SD"><display-name>Music Choice Hip-Hop And R&amp;B</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="820#2217"><display-name>Music Choice Contemporary Instrumentals</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceMax.us@SD"><display-name>Music Choice Max</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="CCTV4America.cn@SD"><display-name>CCTV-4 2113</display-name><icon src="https://i.imgur.com/gBbLyqh.png"/><url>https://directv.com</url></channel>
+<channel id="812#2210"><display-name>Music Choice Bluegrass</display-name><url>https://directv.com</url></channel>
+<channel id="808#6442"><display-name>Music Choice Country Classic Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoice90s.us@SD"><display-name>Music Choice &apos;90s</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2112#5450"><display-name>CTI Zhong Tian</display-name><url>https://directv.com</url></channel>
+<channel id="803#2202"><display-name>Music Choice &apos;60s Movement</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceEasyListening.us@SD"><display-name>Music Choice Easy Listening</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra2.us@SD"><display-name>ESPN College Extra 794 HD</display-name><icon src="https://i.imgur.com/jTrLRdy.png"/><url>https://directv.com</url></channel>
+<channel id="88Films.us@SD"><display-name>88 Films</display-name><icon src="https://i.imgur.com/CbjD0zY.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce18.us@SD"><display-name>NHL Center Ice 788</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce16.us@SD"><display-name>NHL Center Ice 786</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce14.us@SD"><display-name>NHL Center Ice 784 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2104#4700"><display-name>Phoenix Hong Kong</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce12.us@SD"><display-name>NHL Center Ice 782</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce8.us@SD"><display-name>NHL Center Ice 778 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2092#4529"><display-name>CTS</display-name><url>https://directv.com</url></channel>
+<channel id="750#4074"><display-name>Order 2022-23 NBA LEAGUE PASS NOW!</display-name><url>https://directv.com</url></channel>
+<channel id="2062#6703"><display-name>PBO</display-name><url>https://directv.com</url></channel>
+<channel id="2087#4505"><display-name>EBS (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2037#4534"><display-name>Film 24H</display-name><url>https://directv.com</url></channel>
+<channel id="KBSKorea.kr@SD"><display-name>KBS Korea</display-name><icon src="https://i.imgur.com/Dy1xwEd.png"/><url>https://directv.com</url></channel>
+<channel id="2084#4502"><display-name>SBS Plus (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="885#8374"><display-name>Music Choice Filipino</display-name><url>https://directv.com</url></channel>
+<channel id="883#8745"><display-name>Music Choice Irish Favorites</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceToddlerTunes.us@SD"><display-name>Music Choice Toddler Tunes</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2080#4506"><display-name>SBS 2080 (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceKidzOnly.us@SD"><display-name>Music Choice Kids Only!</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceJazz.us@SD"><display-name>Music Choice Jazz</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="844#2240"><display-name>Music Choice Funk</display-name><url>https://directv.com</url></channel>
+<channel id="838#2235"><display-name>Music Choice Classic Alternative</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceAdultAlternative.us@SD"><display-name>Music Choice Adult Alternative</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2115#6416"><display-name>Phoenix TV (2115)</display-name><url>https://directv.com</url></channel>
+<channel id="805#6443"><display-name>Music Choice &apos;80s Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra4.us@SD"><display-name>ESPN College Extra 796 HD</display-name><icon src="https://i.imgur.com/idjVObN.png"/><url>https://directv.com</url></channel>
+<channel id="2108#4056"><display-name>I Cable Finance</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce10.us@SD"><display-name>NHL Center Ice 780</display-name><icon src="https://i.imgur.com/3KS0Sa2.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce7.us@SD"><display-name>NHL Center Ice 777 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2038#4554"><display-name>Honvietv</display-name><url>https://directv.com</url></channel>
+<channel id="2089#4533"><display-name>Tan</display-name><url>https://directv.com</url></channel>
+<channel id="2050#4535"><display-name>Phoenix TV (2050)</display-name><url>https://directv.com</url></channel>
+<channel id="901#5871"><display-name>US Open Mix Channel</display-name><url>https://directv.com</url></channel>
+<channel id="2030#4513"><display-name>SBTN (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceBlues.us@SD"><display-name>Music Choice Blues</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2134#4519"><display-name>TV Globo (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoicePopHits.us@SD"><display-name>Music Choice Pop Hits</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceClassicCountry.us@SD"><display-name>Music Choice Classic Country</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="886#8379"><display-name>Music Choice Vietnamese</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce17.us@SD"><display-name>NHL Center Ice 787</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2102#6030"><display-name>GZTV</display-name><url>https://directv.com</url></channel>
+<channel id="902#5858"><display-name>US Open Network Simulcast</display-name><url>https://directv.com</url></channel>
+<channel id="NuestraVision.us@SD"><display-name>OPM TV</display-name><icon src="https://i.imgur.com/X5KFhKO.png"/><url>https://directv.com</url></channel>
+<channel id="2032#4549"><display-name>Tviet (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRomances.us@SD"><display-name>Music Choice Romances</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="864#2258"><display-name>Music Choice Symphony</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceAlternative.us@SD"><display-name>Music Choice Alternative</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="TheFilipinoChannelNorthAmerica.us@SD"><display-name>TFC - The Filipino Channel (99R)</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/The_Filipino_Channel_2011_logo.svg/512px-The_Filipino_Channel_2011_logo.svg.png"/><url>https://directv.com</url></channel>
+<channel id="905#6926"><display-name>US Open Court Channel 3</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce15.us@SD"><display-name>NHL Center Ice 785 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="877#3690"><display-name>Music Choice Brazilian Pop</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceMusicUrbana.us@SD"><display-name>Music Choice Musica Urbana</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="810#2208"><display-name>Music Choice Americana</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce20.us@SD"><display-name>NHL Center Ice 790</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2119#4053"><display-name>CGTN 2119</display-name><url>https://directv.com</url></channel>
+<channel id="862#8449"><display-name>Music Choice Retro Workout</display-name><url>https://directv.com</url></channel>
+<channel id="858#2252"><display-name>Music Choice Classic Christmas</display-name><url>https://directv.com</url></channel>
+<channel id="2056#4511"><display-name>CTI TV (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRap.us@SD"><display-name>Music Choice Rap</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRock.us@SD"><display-name>Music Choice Rock</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="839#2236"><display-name>Music Choice New Wave</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceClassicRock.us@SD"><display-name>Music Choice Classic Rock</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceMetal.us@SD"><display-name>Music Choice Metal</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceLoveSongs.us@SD"><display-name>Music Choice Love Songs</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceY2K.us@SD"><display-name>Music Choice Y2K</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="814#5002"><display-name>Music Choice Today&apos;s Country Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="813#2211"><display-name>Music Choice Folk</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceSingersSwing.us@SD"><display-name>Music Choice Singers &amp; Swing</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoice80s.us@SD"><display-name>Music Choice &apos;80s</display-name><icon src="https://i.imgur.com/vDIYzOx.png"/><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra5.us@SD"><display-name>ESPN College Extra 797 HD</display-name><icon src="https://i.imgur.com/idjVObN.png"/><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra3.us@SD"><display-name>ESPN College Extra 795 HD</display-name><icon src="https://i.imgur.com/idjVObN.png"/><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra1.us@SD"><display-name>ESPN College Extra 793 HD</display-name><icon src="https://i.imgur.com/T6Vlevz.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce21.us@SD"><display-name>NHL Center Ice 791</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce13.us@SD"><display-name>NHL Center Ice 783 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceSoftRock.us@SD"><display-name>Music Choice Soft Rock</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceRBClassics.us@SD"><display-name>Music Choice R&amp;B Classics</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="835#2232"><display-name>Music Choice Hard Rock</display-name><url>https://directv.com</url></channel>
+<channel id="829#8016"><display-name>Music Choice &apos;80s Rock</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceContemporaryChristian.us@SD"><display-name>Music Choice Contemporary Christian</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="822#2219"><display-name>Music Choice Movie Scores</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceSoundsofTheSeasons.us@SD"><display-name>Music Choice Sounds of the Seasons</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceCountryHits.us@SD"><display-name>Music Choice Country Hits</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="804#6439"><display-name>Music Choice 70&apos;s Ultra</display-name><url>https://directv.com</url></channel>
+<channel id="802#2201"><display-name>Music Choice Malt Shop Favorites</display-name><url>https://directv.com</url></channel>
+<channel id="ESPNCollegeExtra6.us@SD"><display-name>ESPN College Extra 798 HD</display-name><icon src="https://i.imgur.com/idjVObN.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce22.us@SD"><display-name>NHL Center Ice 792</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce19.us@SD"><display-name>NHL Center Ice 789</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce11.us@SD"><display-name>NHL Center Ice 781 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce9.us@SD"><display-name>NHL Center Ice 779 HD</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2069#4542"><display-name>GMA Life (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2065#4550"><display-name>MOR 101.9 (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="ChannelNecoInternational.jp@SD"><display-name>Channel NECO International</display-name><icon src="https://i.imgur.com/4ZJdEvl.png"/><url>https://directv.com</url></channel>
+<channel id="2022#4543"><display-name>Rai News 24</display-name><url>https://directv.com</url></channel>
+<channel id="907#6966"><display-name>US Open Court Channel 5</display-name><url>https://directv.com</url></channel>
+<channel id="881#6135"><display-name>Music Choice Taste of Italy</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceLightClassical.us@SD"><display-name>Music Choice Light Classical</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2148#4504"><display-name>RTVI</display-name><url>https://directv.com</url></channel>
+<channel id="850#2245"><display-name>Music Choice Jazz Vocal Hits</display-name><url>https://directv.com</url></channel>
+<channel id="2135#4503"><display-name>SporTV</display-name><url>https://directv.com</url></channel>
+<channel id="836#2233"><display-name>Music Choice Coffee Shop Cuts</display-name><url>https://directv.com</url></channel>
+<channel id="824#3294"><display-name>Music Choice Lounge</display-name><url>https://directv.com</url></channel>
+<channel id="801#6137"><display-name>Music Choice Big Band</display-name><url>https://directv.com</url></channel>
+<channel id="NHLCenterIce23.us@SD"><display-name>NHL Center Ice 793</display-name><icon src="https://i.imgur.com/pBKZZ8z.png"/><url>https://directv.com</url></channel>
+<channel id="2081#4518"><display-name>MBC</display-name><url>https://directv.com</url></channel>
+<channel id="JOAXDTV.jp@SD"><display-name>Nippon TV HD</display-name><icon src="https://i.imgur.com/IxD8V5X.png"/><url>https://directv.com</url></channel>
+<channel id="2083#4539"><display-name>YTN</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceTodaysCountry.us@SD"><display-name>Music Choice Today&apos;s Country</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="769#2463"><display-name>Order 2022-23 NHL CENTER ICE NOW!</display-name><url>https://directv.com</url></channel>
+<channel id="855#5497"><display-name>Music Choice Jazz Vocal Standards</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoiceSoundscapes.us@SD"><display-name>Music Choice Soundscapes</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceHitList.us@SD"><display-name>Music Choice Hit List</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="811#2209"><display-name>Music Choice Honky Tonk</display-name><url>https://directv.com</url></channel>
+<channel id="ArirangTV.kr@SD"><display-name>Arirang TV</display-name><icon src="https://i.imgur.com/Asu5pE9.png"/><url>https://directv.com</url></channel>
+<channel id="2068#1113"><display-name>Sari Sari Channel</display-name><url>https://directv.com</url></channel>
+<channel id="2033#4501"><display-name>Viet Face (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="823#2220"><display-name>Music Choice Broadway</display-name><url>https://directv.com</url></channel>
+<channel id="2057#4541"><display-name>CBO (99R)</display-name><url>https://directv.com</url></channel>
+<channel id="2034#4528"><display-name>S Channel</display-name><url>https://directv.com</url></channel>
+<channel id="2109#3689"><display-name>I Cable News</display-name><url>https://directv.com</url></channel>
+<channel id="88TV.us@SD"><display-name>88 TV</display-name><icon src="https://i.imgur.com/tcKfZ3T.png"/><url>https://directv.com</url></channel>
+<channel id="865#4150"><display-name>Music Choice Classical Masterpieces</display-name><url>https://directv.com</url></channel>
+<channel id="800#3821"><display-name>Music Choice TV</display-name><url>https://directv.com</url></channel>
+<channel id="828#2225"><display-name>Music Choice Gospel Hallelujah</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoice70s.us@SD"><display-name>Music Choice &apos;70s</display-name><icon src="https://i.imgur.com/8ywu1ca.png"/><url>https://directv.com</url></channel>
+<channel id="NBALeaguePass7.us@SD"><display-name>NBA League Pass 767 HD</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png"/><url>https://directv.com</url></channel>
+<channel id="MusicChoiceThrowbackJamz.us@SD"><display-name>Music Choice Throwback Jamz</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+<channel id="2040#2192"><display-name>TV Japan</display-name><url>https://directv.com</url></channel>
+<channel id="2080#5050"><display-name>SBS HD</display-name><url>https://directv.com</url></channel>
+<channel id="847#2243"><display-name>Music Choice Mainstream Rap</display-name><url>https://directv.com</url></channel>
+<channel id="2082#4525"><display-name>KBS America</display-name><url>https://directv.com</url></channel>
+<channel id="799#2156"><display-name>iHeartRADIO</display-name><url>https://directv.com</url></channel>
+<channel id="MusicChoicePartyFavorites.us@SD"><display-name>Music Choice Party Favorites</display-name><icon src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Music_Choice_logo.png/512px-Music_Choice_logo.png"/><url>https://directv.com</url></channel>
+</tv>

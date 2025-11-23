@@ -1,0 +1,69 @@
+<#
+ci_validate_channels.ps1
+Fails CI if any input channel CSV has blank name/site/xmltv_id.
+Handles all column name variations.
+#>
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "Stop"
+$BasePath = Resolve-Path (Join-Path $PSScriptRoot "..\..") | Select-Object -ExpandProperty Path
+$OutputDir = Join-Path $BasePath "custom\output"
+$Targets = @(
+"Draft-Keep.csv",
+"matched_channels.csv",
+"recommended_custom_list.csv",
+"consolidated_inventory.csv"
+)
+# helper to get real field name across CSVs
+function Get-Field {
+param($row, $possibleNames)
+foreach ($n in $possibleNames) {
+if ($row.PSObject.Properties.Name -contains $n) {
+return $row.$n
+}
+}
+return $null
+}
+$bad = New-Object System.Collections.Generic.List[object]
+foreach ($t in $Targets) {
+$p = Join-Path $OutputDir $t
+if (!(Test-Path $p)) { continue }
+try {
+$rows = Import-Csv $p
+} catch {
+Write-Host "ERROR: Cannot read CSV $p"
+exit 1
+}
+$i = 0
+foreach ($r in $rows) {
+$i++
+# support all naming variations
+$name = Get-Field $r @("name","Channel","Channel Name","display_name")
+$site = Get-Field $r @("site","site_name","site_id")
+$xmltv = Get-Field $r @("xmltv_id","xmltv","xmltv-id","id")
+# drop totally empty row
+if ([string]::IsNullOrWhiteSpace($name) -and
+[string]::IsNullOrWhiteSpace($site) -and
+[string]::IsNullOrWhiteSpace($xmltv)) {
+$bad.Add([pscustomobject]@{
+file=$t; row=$i; name=""; site=""; xmltv_id=""
+})
+continue
+}
+# but count as error if partial blank
+if ([string]::IsNullOrWhiteSpace($name) -or
+[string]::IsNullOrWhiteSpace($site) -or
+[string]::IsNullOrWhiteSpace($xmltv)) {
+$bad.Add([pscustomobject]@{
+file=$t; row=$i; name=$name; site=$site; xmltv_id=$xmltv
+})
+}
+}
+}
+if ($bad.Count -gt 0) {
+$badPath = Join-Path $OutputDir "ci_bad_rows.csv"
+$bad | Export-Csv -NoTypeInformation -Encoding UTF8 $badPath
+Write-Host "✖ FOUND BAD ROWS — see $badPath"
+exit 1
+}
+Write-Host "✔ OK: No bad rows detected."
+exit 0

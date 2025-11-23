@@ -1,0 +1,113 @@
+display_name,country,match_hint
+# -------- CANADA (CA) locals + staples --------
+CTV Toronto,CA,ctv toronto
+CTV Kitchener,CA,ctv kitchener
+CTV London,CA,ctv london
+CTV Barrie,CA,ctv barrie
+CTV2 London,CA,ctv2 london
+CTV2 Barrie,CA,ctv2 barrie
+CTV East,CA,ctv halifax
+CTV West,CA,ctv vancouver
+CBC Toronto,CA,cbc toronto
+CBC Halifax,CA,cbc halifax
+CBC Vancouver,CA,cbc vancouver
+CHCH Hamilton,CA,chch
+TVO / TVOntario,CA,tvo
+CP24,CA,cp24
+# -------- CANADA (CA) pay/specialty --------
+Crave,CA,crave
+Crave 1,CA,crave 1
+Crave 2,CA,crave 2
+HBO Canada,CA,hbo
+Showcase,CA,showcase
+W Network,CA,w network
+Slice,CA,slice
+Much,CA,much
+OutTV,CA,outtv
+Cottage Life,CA,cottage life
+CTV Comedy Channel,CA,ctv comedy
+CTV Comedy Channel,CA,comedy channel
+Crime & Investigation,CA,crime investigation
+Documentary Channel,CA,documentary channel
+MovieTime,CA,movietime
+DejaView,CA,dejaview
+Starz Canada 1,CA,starz
+Disney Channel,CA,disney channel
+Discovery Channel,CA,discovery
+History,CA,history
+HGTV,CA,hgtv
+Food Network,CA,food network
+Flavour Network,CA,flavour
+Investigation Discovery,CA,investigation discovery
+Lifetime,CA,lifetime
+Showtime,CA,showtime
+Paramount Network,CA,paramount network
+A&E,CA,a&e
+Bravo,CA,bravo
+Adult Swim,CA,adult swim
+National Geographic,CA,national geographic
+Nat Geo Wild,CA,nat geo wild
+Smithsonian Channel,CA,smithsonian
+# -------- USA (US) locals / time-shift / news --------
+WGRZ NBC Buffalo,US,wgrz
+WIVB CBS Buffalo,US,wivb
+WKBW ABC Buffalo,US,wkbw
+WUTV FOX Buffalo,US,wutv
+PBS Buffalo,US,pbs buffalo
+PBS Buffalo,US,wned
+CBS East,US,cbs east
+NBC East,US,nbc east
+ABC East,US,abc east
+FOX East,US,fox east
+CNN,US,cnn
+MSNBC,US,msnbc
+# -------- USA (US) pay/specialty --------
+FX,US,fx
+FXX,US,fxx
+TLC,US,tlc
+HGTV,US,hgtv
+Food Network,US,food network
+History,US,history
+Discovery,US,discovery
+National Geographic,US,national geographic
+Nat Geo Wild,US,nat geo wild
+A&E,US,a&e
+Adult Swim,US,adult swim
+Bravo,US,bravo
+Cinemax,US,cinemax
+Showtime,US,showtime
+Starz,US,starz
+Syfy,US,syfy
+TBS,US,tbs
+TNT,US,tnt
+USA Network,US,usa network
+Investigation Discovery,US,investigation discovery
+Lifetime,US,lifetime
+Paramount Network,US,paramount network
+Smithsonian Channel,US,smithsonian
+# -------- UK (UK) terrestrial + extras --------
+BBC One,UK,bbc one
+BBC Two,UK,bbc two
+BBC Three,UK,bbc three
+BBC Four,UK,bbc four
+Channel 4,UK,channel 4
+More4,UK,more4
+ITV,UK,itv
+ITV2,UK,itv2
+ITV3,UK,itv3
+ITV4,UK,itv4
+Sky One,UK,sky one
+Sky Atlantic,UK,sky atlantic
+Sky Showcase,UK,sky showcase
+Sky Movies,UK,sky movies
+# -------- AUSTRALIA (AU) primaries + extras --------
+ABC Australia,AU,abc
+Seven Network,AU,seven
+Nine Network,AU,nine
+Ten Network,AU,ten
+7Mate,AU,7mate
+7Two,AU,7two
+9Gem,AU,9gem
+9Go,AU,9go
+10Bold,AU,10 bold
+10Peach,AU,10 peach
