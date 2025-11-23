@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<channels>
+  <channel site="abc.net.au">11</channel>
+  <channel site="abc.net.au">7HD</channel>
+  <channel site="abc.net.au">9HD</channel>
+  <channel site="abc.net.au">ABC1</channel>
+  <channel site="abc.net.au">ABC2</channel>
+  <channel site="abc.net.au">ABC3</channel>
+  <channel site="abc.net.au">ABC4KIDS</channel>
+  <channel site="abc.net.au">ABCHD</channel>
+  <channel site="abc.net.au">ABCN</channel>
+  <channel site="abc.net.au">GEM</channel>
+  <channel site="abc.net.au">GO</channel>
+  <channel site="abc.net.au">ONE</channel>
+  <channel site="abc.net.au">RTV</channel>
+  <channel site="abc.net.au">SBS2</channel>
+  <channel site="abc.net.au">SBS3</channel>
+  <channel site="abc.net.au">SBSHD</channel>
+  <channel site="abc.net.au">SBSWW</channel>
+  <channel site="abc.net.au">SHAKE</channel>
+  <channel site="abc.net.au">SPREE</channel>
+  <channel site="abc.net.au">TENHD</channel>
+  <channel site="abc.net.au">TVSN</channel>
+  <channel site="abc.net.au">VICHD</channel>
+  <channel site="abc.net.au">YOUTV</channel>
+  <channel site="directv.com" xmltv_id="AE.us@East">A&amp;E</channel>
+  <channel site="directv.com" xmltv_id="W51EGD1.us@SD">A3 Parkersburg 65 PBS (Virt)</channel>
+  <channel site="directv.com" xmltv_id="AMC.us@East">AMC</channel>
+  <channel site="directv.com" xmltv_id="CBSSportsNetworkUSA.us@SD">CBS Sports Network</channel>
+  <channel site="directv.com" xmltv_id="Cinemax.us@East">Cinemax</channel>
+  <channel site="directv.com" xmltv_id="ComedyCentral.us@East">Comedy Central</channel>
+  <channel site="directv.com" xmltv_id="DiscoveryChannel.us@East">Discovery</channel>
+  <channel site="directv.com" xmltv_id="FoxBusinessNetwork.us@SD">Fox Business Network</channel>
+  <channel site="directv.com" xmltv_id="FX.us@East">FX</channel>
+  <channel site="directv.com" xmltv_id="FXX.us@East">FXX</channel>
+  <channel site="directv.com" xmltv_id="HBO2.us@East">HBO 2 East</channel>
+  <channel site="directv.com" xmltv_id="KABCDT1.us@SD">KABC (Los Angeles) ABC HD West</channel>
+  <channel site="directv.com" xmltv_id="NationalGeographic.us@East">National Geographic</channel>
+  <channel site="directv.com" xmltv_id="ParamountNetwork.us@East">Paramount Network</channel>
+  <channel site="directv.com" xmltv_id="Showtime.us@East">Showtime (E)</channel>
+  <channel site="directv.com" xmltv_id="SmithsonianChannel.us@East">Smithsonian Channel HD</channel>
+  <channel site="directv.com" xmltv_id="StarzCinema.us@East">STARZ Cinema HD</channel>
+  <channel site="directv.com" xmltv_id="Starz.us@East">STARZ East</channel>
+  <channel site="directv.com" xmltv_id="TNT.us@East">TNT</channel>
+  <channel site="directv.com" xmltv_id="USANetwork.us@East">USA Network</channel>
+  <channel site="epgshare01.online">10 Bold Sydney</channel>
+  <channel site="epgshare01.online">10 Peach Sydney</channel>
+  <channel site="epgshare01.online">10 Sydney</channel>
+  <channel site="epgshare01.online">7 Sydney</channel>
+  <channel site="epgshare01.online">7Bravo Sydney</channel>
+  <channel site="epgshare01.online">7flix Sydney</channel>
+  <channel site="epgshare01.online">7mate Sydney</channel>
+  <channel site="epgshare01.online">7TWO Sydney</channel>
+  <channel site="epgshare01.online">9 Sydney</channel>
+  <channel site="epgshare01.online">9Gem Sydney</channel>
+  <channel site="epgshare01.online">9Go! Sydney</channel>
+  <channel site="epgshare01.online">9Life Sydney</channel>
+  <channel site="epgshare01.online">9Rush Sydney</channel>
+  <channel site="epgshare01.online">A and E Canada</channel>
+  <channel site="epgshare01.online">ABC (KABC) Los Angeles, CA</channel>
+  <channel site="epgshare01.online">ABC (WKBW) Buffalo, NY</channel>
+  <channel site="epgshare01.online">ABC Entertains Sydney</channel>
+  <channel site="epgshare01.online">ABC Sydney</channel>
+  <channel site="epgshare01.online">Ace TV (WBXZ-LP10) Buffalo, NY</channel>
+  <channel site="epgshare01.online">Adult Swim - East</channel>
+  <channel site="epgshare01.online">AMC - Canada</channel>
+  <channel site="epgshare01.online">AMC - Eastern Feed</channel>
+  <channel site="epgshare01.online">Animal Planet</channel>
+  <channel site="epgshare01.online">BBC America - East</channel>
+  <channel site="epgshare01.online">BBC Canada East</channel>
+  <channel site="epgshare01.online">BBC Drama</channel>
+  <channel site="epgshare01.online">BBC Earth</channel>
+  <channel site="epgshare01.online">BBC First HD</channel>
+  <channel site="epgshare01.online">BBC UKTV</channel>
+  <channel site="epgshare01.online">Bravo</channel>
+  <channel site="epgshare01.online">Bravo Canada</channel>
+  <channel site="epgshare01.online">Bravo USA - Eastern Feed</channel>
+  <channel site="epgshare01.online">CBC (CBHT) Halifax, NS</channel>
+  <channel site="epgshare01.online">CBC (CBLT) Toronto, ON</channel>
+  <channel site="epgshare01.online">CBC (CBUT) Vancouver, BC</channel>
+  <channel site="epgshare01.online">CBHT Halifax (CBHT)</channel>
+  <channel site="epgshare01.online">CBS (KCBS) Los Angeles, CA</channel>
+  <channel site="epgshare01.online">CBS (KMTV) Omaha, NE</channel>
+  <channel site="epgshare01.online">CBS (WIVB) Buffalo, NY</channel>
+  <channel site="epgshare01.online">Channel 4</channel>
+  <channel site="epgshare01.online">Channel 44</channel>
+  <channel site="epgshare01.online">Channel 5</channel>
+  <channel site="epgshare01.online">Channel 7</channel>
+  <channel site="epgshare01.online">Channels 24</channel>
+  <channel site="epgshare01.online">CHCH Hamilton, ON</channel>
+  <channel site="epgshare01.online">CHCH-DT-2 London, ON</channel>
+  <channel site="epgshare01.online">Cinemax - Eastern Feed</channel>
+  <channel site="epgshare01.online">Cinemax - Pacific Feed</channel>
+  <channel site="epgshare01.online">CITY Toronto, ON</channel>
+  <channel site="epgshare01.online">CITY Vancouver, BC</channel>
+  <channel site="epgshare01.online">CMT Canada</channel>
+  <channel site="epgshare01.online">CNBC</channel>
+  <channel site="epgshare01.online">CNN</channel>
+  <channel site="epgshare01.online">Cooking Channel Canada</channel>
+  <channel site="epgshare01.online">Cottage Life</channel>
+  <channel site="epgshare01.online">CP24 (CablePulse 24)</channel>
+  <channel site="epgshare01.online">Crave Movies and HBO on Demand</channel>
+  <channel site="epgshare01.online">Crave1 - East</channel>
+  <channel site="epgshare01.online">Crave2 - East</channel>
+  <channel site="epgshare01.online">Crave3 - East</channel>
+  <channel site="epgshare01.online">Crave4</channel>
+  <channel site="epgshare01.online">CTV (CFTO) Toronto, ON</channel>
+  <channel site="epgshare01.online">CTV (CJCH) Halifax</channel>
+  <channel site="epgshare01.online">CTV (CKCO) Kitchener, ON</channel>
+  <channel site="epgshare01.online">CTV Comedy - East</channel>
+  <channel site="epgshare01.online">CTV Drama</channel>
+  <channel site="epgshare01.online">CTV Life</channel>
+  <channel site="epgshare01.online">CTV Nature</channel>
+  <channel site="epgshare01.online">CTV Sci-Fi</channel>
+  <channel site="epgshare01.online">CTV Sydney (CJCB-DT)</channel>
+  <channel site="epgshare01.online">CTV Two London/CFPL (CTV2L)</channel>
+  <channel site="epgshare01.online">CTV Vancouver, BC</channel>
+  <channel site="epgshare01.online">CTV Wild</channel>
+  <channel site="epgshare01.online">CTV2 Atlantic Region</channel>
+  <channel site="epgshare01.online">CTV2 Barrie (CKVR-DT)</channel>
+  <channel site="epgshare01.online">CTV2 Toronto, ON</channel>
+  <channel site="epgshare01.online">CTV2 Vancouver Island. BC</channel>
+  <channel site="epgshare01.online">CW (WNLO) Buffalo, NY</channel>
+  <channel site="epgshare01.online">CW Plus Central</channel>
+  <channel site="epgshare01.online">CW Plus Mountain</channel>
+  <channel site="epgshare01.online">CW Plus Pacific</channel>
+  <channel site="epgshare01.online">Deja View</channel>
+  <channel site="epgshare01.online">Disc.History</channel>
+  <channel site="epgshare01.online">Disc.Sci+1</channel>
+  <channel site="epgshare01.online">Disc.Science</channel>
+  <channel site="epgshare01.online">Discovery Channel (US) - Eastern Feed</channel>
+  <channel site="epgshare01.online">Discovery Channel CA</channel>
+  <channel site="epgshare01.online">Disney - Eastern Feed</channel>
+  <channel site="epgshare01.online">Disney Channel Canada - East</channel>
+  <channel site="epgshare01.online">Documentary Channel (Canada)</channel>
+  <channel site="epgshare01.online">Double J Sydney</channel>
+  <channel site="epgshare01.online">E! Canada</channel>
+  <channel site="epgshare01.online">Flavour Network Canada</channel>
+  <channel site="epgshare01.online">Food Network CA</channel>
+  <channel site="epgshare01.online">Food Netwrk+1</channel>
+  <channel site="epgshare01.online">FOX (KTTV) Los Angeles, CA</channel>
+  <channel site="epgshare01.online">FOX (WUTV) Buffalo, NY</channel>
+  <channel site="epgshare01.online">Foxtel Movies Premiere</channel>
+  <channel site="epgshare01.online">Foxtel Movies Premiere +2</channel>
+  <channel site="epgshare01.online">FX Movie Channel</channel>
+  <channel site="epgshare01.online">FX Networks Canada</channel>
+  <channel site="epgshare01.online">FX Networks East Coast</channel>
+  <channel site="epgshare01.online">FXX Canada</channel>
+  <channel site="epgshare01.online">FXX USA - Eastern</channel>
+  <channel site="epgshare01.online">Global (CIII-DT-41) Toronto</channel>
+  <channel site="epgshare01.online">Global Maritimes (CIHF)</channel>
+  <channel site="epgshare01.online">HBO - Eastern Feed</channel>
+  <channel site="epgshare01.online">HBO - Pacific Feed</channel>
+  <channel site="epgshare01.online">HBO 2 - Eastern Feed</channel>
+  <channel site="epgshare01.online">HBO 2 - Pacific Feed</channel>
+  <channel site="epgshare01.online">HBO 2 HD (HBO2)</channel>
+  <channel site="epgshare01.online">HBO Canada East On Demand</channel>
+  <channel site="epgshare01.online">HBO Signature (HBO 3) - Eastern</channel>
+  <channel site="epgshare01.online">HBO Zone HD - East</channel>
+  <channel site="epgshare01.online">HBO1</channel>
+  <channel site="epgshare01.online">HGTV CA</channel>
+  <channel site="epgshare01.online">HGTV USA - Eastern Feed</channel>
+  <channel site="epgshare01.online">Historia</channel>
+  <channel site="epgshare01.online">History Canada East</channel>
+  <channel site="epgshare01.online">History Channel US - Eastern Feed</channel>
+  <channel site="epgshare01.online">HLN</channel>
+  <channel site="epgshare01.online">Hollywood Suite 2000s Movies</channel>
+  <channel site="epgshare01.online">Hollywood Suite 2010s+ Movies</channel>
+  <channel site="epgshare01.online">Hollywood Suite 70s+ Movies</channel>
+  <channel site="epgshare01.online">Hollywood Suite 80s and 90s Movies</channel>
+  <channel site="epgshare01.online">ICI (CBLFT) Toronto</channel>
+  <channel site="epgshare01.online">ION - Eastern Feed</channel>
+  <channel site="epgshare01.online">ITV1+1</channel>
+  <channel site="epgshare01.online">LifeStyle Food</channel>
+  <channel site="epgshare01.online">LifeStyle Food +2</channel>
+  <channel site="epgshare01.online">LOGO - East</channel>
+  <channel site="epgshare01.online">MGM Presents</channel>
+  <channel site="epgshare01.online">MGM Presents Action</channel>
+  <channel site="epgshare01.online">MGM Presents Horror</channel>
+  <channel site="epgshare01.online">MGM+ HDTV (East) (MGM+HD)</channel>
+  <channel site="epgshare01.online">MGM+ Hits HDTV (East) (MGM+HTHD)</channel>
+  <channel site="epgshare01.online">MGM+ Marquee HDTV (East) (MGM+MRQ)</channel>
+  <channel site="epgshare01.online">MNT (WNYO) Buffalo, NY</channel>
+  <channel site="epgshare01.online">MoreMax Eastern</channel>
+  <channel site="epgshare01.online">MoviePlex East (MPLEX)</channel>
+  <channel site="epgshare01.online">Movies24</channel>
+  <channel site="epgshare01.online">Moviesphere</channel>
+  <channel site="epgshare01.online">MovieTime</channel>
+  <channel site="epgshare01.online">MSNBC Canada</channel>
+  <channel site="epgshare01.online">MTV MUSIC</channel>
+  <channel site="epgshare01.online">Much Music</channel>
+  <channel site="epgshare01.online">Nat Geo Wild</channel>
+  <channel site="epgshare01.online">Nat Geo+1</channel>
+  <channel site="epgshare01.online">National Geographic Canada</channel>
+  <channel site="epgshare01.online">National Geographic US - Eastern</channel>
+  <channel site="epgshare01.online">National Geographic Wild Canada</channel>
+  <channel site="epgshare01.online">NBC (KNBC) Los Angeles, CA</channel>
+  <channel site="epgshare01.online">NBC (WGRZ) Buffalo, NY</channel>
+  <channel site="epgshare01.online">NITV Sydney</channel>
+  <channel site="epgshare01.online">OUTtv</channel>
+  <channel site="epgshare01.online">Oxygen True Crime</channel>
+  <channel site="epgshare01.online">Paramount Network USA - Eastern Feed</channel>
+  <channel site="epgshare01.online">Paramount+ with Showtime - Eastern Feed</channel>
+  <channel site="epgshare01.online">Paramount+ with Showtime On Demand</channel>
+  <channel site="epgshare01.online">Paramount+ with Showtime West</channel>
+  <channel site="epgshare01.online">PBS (WNED) Buffalo, NY</channel>
+  <channel site="epgshare01.online">Peachtree TV HDTV (WPCHD)</channel>
+  <channel site="epgshare01.online">Rogers Kitchener</channel>
+  <channel site="epgshare01.online">SBS Food Sydney</channel>
+  <channel site="epgshare01.online">SBS Sydney</channel>
+  <channel site="epgshare01.online">SBS Viceland Sydney</channel>
+  <channel site="epgshare01.online">SBS World Movies Sydney</channel>
+  <channel site="epgshare01.online">Showcase</channel>
+  <channel site="epgshare01.online">Showcase +2</channel>
+  <channel site="epgshare01.online">Showcase Canada</channel>
+  <channel site="epgshare01.online">Showtime 2 - Eastern</channel>
+  <channel site="epgshare01.online">Showtime Extreme - Eastern</channel>
+  <channel site="epgshare01.online">Showtime Next HD - Eastern</channel>
+  <channel site="epgshare01.online">Showtime Showcase HD - East</channel>
+  <channel site="epgshare01.online">Sky Action</channel>
+  <channel site="epgshare01.online">Sky Adventure</channel>
+  <channel site="epgshare01.online">Sky Atlantic+1</channel>
+  <channel site="epgshare01.online">Sky Cinema Select</channel>
+  <channel site="epgshare01.online">Sky Crime+1</channel>
+  <channel site="epgshare01.online">Sky Greats</channel>
+  <channel site="epgshare01.online">Sky History+1</channel>
+  <channel site="epgshare01.online">Sky History2</channel>
+  <channel site="epgshare01.online">Sky Max HD</channel>
+  <channel site="epgshare01.online">Sky ScFi/HorHD</channel>
+  <channel site="epgshare01.online">SkyPremiere+1</channel>
+  <channel site="epgshare01.online">SkyShowcase+1</channel>
+  <channel site="epgshare01.online">SkySp Action</channel>
+  <channel site="epgshare01.online">Slice</channel>
+  <channel site="epgshare01.online">Starz - Eastern</channel>
+  <channel site="epgshare01.online">Starz - Pacific</channel>
+  <channel site="epgshare01.online">Starz Cinema HD - Eastern</channel>
+  <channel site="epgshare01.online">Starz Comedy HD - Eastern</channel>
+  <channel site="epgshare01.online">Starz Edge - Eastern</channel>
+  <channel site="epgshare01.online">Starz Encore - Eastern</channel>
+  <channel site="epgshare01.online">Starz Encore - Pacific</channel>
+  <channel site="epgshare01.online">Starz Encore Action - Eastern</channel>
+  <channel site="epgshare01.online">STARZ1 - East</channel>
+  <channel site="epgshare01.online">STARZ2 - East</channel>
+  <channel site="epgshare01.online">Syfy - Eastern Feed</channel>
+  <channel site="epgshare01.online">SYFY+1</channel>
+  <channel site="epgshare01.online">TBS - East</channel>
+  <channel site="epgshare01.online">TCT (WBNF) Buffalo, NY</channel>
+  <channel site="epgshare01.online">TLC Canada</channel>
+  <channel site="epgshare01.online">TMC (US) - Eastern Feed</channel>
+  <channel site="epgshare01.online">TMC Xtra HD - Eastern</channel>
+  <channel site="epgshare01.online">TNT - Eastern Feed</channel>
+  <channel site="epgshare01.online">TSC</channel>
+  <channel site="epgshare01.online">TVO (CICA-DT) Toronto, ON</channel>
+  <channel site="epgshare01.online">VICE</channel>
+  <channel site="epgshare01.online">W (WTN) - East</channel>
+  <channel site="epgshare01.online">W (WTN) - Pacific</channel>
+  <channel site="epgshare01.online">Wild TV</channel>
+  <channel site="pluto.tv">BritBox Mysteries</channel>
+  <channel site="pluto.tv">British Drama</channel>
+  <channel site="streamingtvguides.com">A&amp;E Network (Pacific)</channel>
+  <channel site="streamingtvguides.com">AMC (Pacific)</channel>
+  <channel site="streamingtvguides.com">Animal Planet (Pacific)</channel>
+  <channel site="streamingtvguides.com">BBC America (Pacific)</channel>
+  <channel site="streamingtvguides.com">Bravo (Pacific)</channel>
+  <channel site="streamingtvguides.com">Comedy TV HD</channel>
+  <channel site="streamingtvguides.com">Country Music Television (Pacific)</channel>
+  <channel site="streamingtvguides.com">Country Music Television HD Pacifc</channel>
+  <channel site="streamingtvguides.com">CRAVE</channel>
+  <channel site="streamingtvguides.com">CRAVE (92)</channel>
+  <channel site="streamingtvguides.com">CW NY</channel>
+  <channel site="streamingtvguides.com">FOOD</channel>
+  <channel site="streamingtvguides.com">Food Food</channel>
+  <channel site="streamingtvguides.com">Food Network (Pacific)</channel>
+  <channel site="streamingtvguides.com">FX (Pacific)</channel>
+  <channel site="streamingtvguides.com">FX Movie</channel>
+  <channel site="streamingtvguides.com">HBO Comedy</channel>
+  <channel site="streamingtvguides.com">HBO Comedy (Pacific)</channel>
+  <channel site="streamingtvguides.com">HBO East</channel>
+  <channel site="streamingtvguides.com">HBO Signature</channel>
+  <channel site="streamingtvguides.com">HBO Signature (Pacific)</channel>
+  <channel site="streamingtvguides.com">HBO Zone (Pacific)</channel>
+  <channel site="streamingtvguides.com">Max I HBO</channel>
+  <channel site="streamingtvguides.com">MGM HD</channel>
+  <channel site="streamingtvguides.com">MovieMax</channel>
+  <channel site="streamingtvguides.com">MTV</channel>
+  <channel site="streamingtvguides.com">MTV2</channel>
+  <channel site="streamingtvguides.com">Multimedios</channel>
+  <channel site="streamingtvguides.com">SHOWTIME</channel>
+  <channel site="streamingtvguides.com">Syfy (Pacific)</channel>
+  <channel site="streamingtvguides.com">Tr3S (103A)</channel>
+  <channel site="streamingtvguides.com">Viceland (Pacific)</channel>
+  <channel site="tv24.co.uk" xmltv_id="Channel5.uk@SD">5</channel>
+  <channel site="tv24.co.uk" xmltv_id="BBCFour.uk@UK">BBC Four</channel>
+  <channel site="tv24.co.uk">BBC One London</channel>
+  <channel site="tv24.co.uk" xmltv_id="BBCThree.uk@SD">BBC Three</channel>
+  <channel site="tv24.co.uk" xmltv_id="BBCTwo.uk@England">BBC Two</channel>
+  <channel site="tv24.co.uk">Discovery Science</channel>
+  <channel site="tv24.co.uk" xmltv_id="FoodNetwork.uk@SD">Food Network</channel>
+  <channel site="tv24.co.uk">Food Network +1</channel>
+  <channel site="tv24.co.uk">ITV1 Central (Plus 1 Hour)</channel>
+  <channel site="tv24.co.uk" xmltv_id="ITV2.uk@SD">ITV2</channel>
+  <channel site="tv24.co.uk">ITV2 +1</channel>
+  <channel site="tv24.co.uk" xmltv_id="ITV3.uk@SD">ITV3</channel>
+  <channel site="tv24.co.uk">ITV3 +1</channel>
+  <channel site="tv24.co.uk" xmltv_id="ITV4.uk@SD">ITV4</channel>
+  <channel site="tv24.co.uk">ITV4 +1</channel>
+  <channel site="tv24.co.uk">KMTV</channel>
+  <channel site="tv24.co.uk">Movies 24</channel>
+  <channel site="tv24.co.uk">MTV 90s UK</channel>
+  <channel site="tv24.co.uk">Sky Cinema Action</channel>
+  <channel site="tv24.co.uk">Sky Cinema Drama</channel>
+  <channel site="tv24.co.uk">Sky Cinema Hits</channel>
+  <channel site="tv24.co.uk">Sky Cinema Premiere</channel>
+  <channel site="tv24.co.uk">Sky Cinema Sci Fi &amp; Horror</channel>
+  <channel site="tv24.co.uk">Sky Cinema Thriller</channel>
+  <channel site="tv24.co.uk">Sky Comedy</channel>
+  <channel site="tv24.co.uk">Sky Sci-Fi</channel>
+  <channel site="tvinsider.com">BritBox</channel>
+  <channel site="tvinsider.com">HBO2</channel>
+  <channel site="tvinsider.com">Hulu</channel>
+  <channel site="tvinsider.com">MGM+ Drive-In</channel>
+  <channel site="tvinsider.com">MGM+ Marquee</channel>
+  <channel site="tvinsider.com">Movie MAX</channel>
+  <channel site="tvinsider.com">MoviePlex</channel>
+  <channel site="tvinsider.com">Paramount+</channel>
+  <channel site="tvinsider.com">Science Channel</channel>
+  <channel site="tvinsider.com">Showtime 2</channel>
+  <channel site="tvinsider.com">Showtime Extreme</channel>
+  <channel site="tvinsider.com">The CW</channel>
+  <channel site="tvinsider.com">The Movie Channel</channel>
+  <channel site="tvinsider.com">The Movie Channel Extra</channel>
+  <channel site="tvinsider.com">Vice TV</channel>
+  <channel site="virgintvgo.virginmedia.com" xmltv_id="AnimalPlanet.uk@Plus1">Animal Planet +1</channel>
+</channels>
