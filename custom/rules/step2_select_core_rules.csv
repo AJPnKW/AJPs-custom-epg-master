@@ -1,0 +1,6 @@
+rule_id,action,field,regex,countries,notes
+R001,DROP,name,"(?i)\b(church|god|faith|jesus|islam|quran|tlm|daystar|trinity|worship|miracle)\b",,religious reject
+R002,DROP,name,"(?i)\b(kids?|jr\.?|junior|cartoon|nick|nickelodeon|disney jr|pbs kids|treehouse|youth)\b",,kids reject
+R003,DROP,name,"(?i)\b(sports?|espn|tsn|sport|sky sports|fox sports|golf|nba|nfl|mlb|nhl|f1|ufc)\b",,sports reject
+R004,DROP,name,"(?i)\b(radio|fm|am\s?\d+|music only|audio)\b",,radio reject
+R005,DROP,name,"(?i)\b(news)\b",,news reject base (allowlist applies later)
