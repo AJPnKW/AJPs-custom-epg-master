@@ -1,289 +1,309 @@
 <#
--------------------------------------------------------------------------------
 Script Name: step1_extract_all_sites_master_channels.ps1
-Purpose    : STEP 1 of AJP Custom EPG pipeline.
-             Extract channel master list ONLY from approved/whitelisted
-             site channel XML files, producing a consolidated CSV baseline.
+Purpose:     Step 1 of AJP custom EPG pipeline. Extracts master channel list
+             ONLY from whitelisted site XML files (step1_sources.csv).
+Author:      ChatGPT (for Andrew J. Pearen)
+Version:     3.1
+Created:     2025-11-24
+Last Update: 2025-11-24
 
-Author     : ChatGPT for Andrew Pearen
-Version    : 3.0
-Created    : 2025-11-23
-Updated    : 2025-11-23
-
-Run Cmd    : PowerShell:
-             C:\Users\<user>\PROJECTS\AJPs-custom-epg-master\AJPs-custom-epg-master\custom\scripts\step1_extract_all_sites_master_channels.ps1
-
-Inputs     :
-  - Whitelist CSV (optional, auto-created if missing):
-      custom\rules\step1_sources.csv
-    If missing, internal defaults are used.
-
-  - Approved XML files under:
-      sites\<site>\*.channels.xml
-
-Outputs    :
-  - Master CSV:
-      custom\data\all_sites_master_channels.csv
-  - Versioned Master CSV:
-      custom\data\versioned-master\master_channels_yyyyMMdd_HHmmss.csv
-  - Log:
-      custom\logs\step1_extract_all_sites_master_channels.log
-
-Notes:
-  - No recursive scan of sites/. Only whitelist files are loaded.
-  - Robust name extraction (InnerText, @name, <display-name>).
-  - Safe log append with retry to avoid file locks.
--------------------------------------------------------------------------------
+Run:
+  PowerShell: C:\Users\<user>\PROJECTS\AJPs-custom-epg-master\AJPs-custom-epg-master\custom\scripts\step1_extract_all_sites_master_channels.ps1 -Mode Soft
 #>
+
+[CmdletBinding()]
+param(
+    [ValidateSet("Soft","Hard")]
+    [string]$Mode = "Soft"
+)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-# ---------------------------[ Paths & Setup ]---------------------------------
-$ScriptVersion = "3.0"
-$StartStamp    = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-$StampCompact  = Get-Date -Format "yyyyMMdd_HHmmss"
+# ---------------------------
+# Paths / constants
+# ---------------------------
+$ScriptName   = Split-Path $PSCommandPath -Leaf
+$ScriptVer    = "3.1"
+$NowStamp     = Get-Date -Format "yyyyMMdd_HHmmss"
 
-$ScriptRoot = Split-Path -Parent $PSCommandPath
-$CustomPath = Split-Path -Parent $ScriptRoot
-$BasePath   = Split-Path -Parent $CustomPath
+$BasePath     = Resolve-Path (Join-Path $PSScriptRoot "..\..") | Select-Object -ExpandProperty Path
+$CustomPath   = Join-Path $BasePath "custom"
+$SitesPath    = Join-Path $BasePath "sites"
+$RulesPath    = Join-Path $CustomPath "rules"
+$LogsPath     = Join-Path $CustomPath "logs"
+$BaselinePath = Join-Path $CustomPath "baseline"
+$VersionedOut = Join-Path $BaselinePath "versioned"
 
-$SitesPath  = Join-Path $BasePath "sites"
-$DataPath   = Join-Path $CustomPath "data"
-$RulesPath  = Join-Path $CustomPath "rules"
-$LogsPath   = Join-Path $CustomPath "logs"
+$WhitelistCSV = Join-Path $RulesPath "step1_sources.csv"
 
-$MasterCsv  = Join-Path $DataPath "all_sites_master_channels.csv"
-$VersionDir = Join-Path $DataPath "versioned-master"
-$VersionCsv = Join-Path $VersionDir ("master_channels_{0}.csv" -f $StampCompact)
+# Output files
+$StableCsv    = Join-Path $BaselinePath "all_sites_master_channels.csv"
+$VersionedCsv = Join-Path $VersionedOut ("all_sites_master_channels_{0}.csv" -f $NowStamp)
 
-$LogFile    = Join-Path $LogsPath "step1_extract_all_sites_master_channels.log"
-$SourcesCsv = Join-Path $RulesPath "step1_sources.csv"
-
-$RequiredDirs = @($DataPath, $RulesPath, $LogsPath, $VersionDir)
-foreach ($d in $RequiredDirs) {
-    if (!(Test-Path $d)) { New-Item -ItemType Directory -Path $d -Force | Out-Null }
+# ---------------------------
+# Safe folder ensures
+# ---------------------------
+$foldersToEnsure = @($LogsPath, $BaselinePath, $VersionedOut)
+foreach ($f in $foldersToEnsure) {
+    if (-not (Test-Path $f)) {
+        New-Item -ItemType Directory -Force -Path $f | Out-Null
+    }
 }
 
-# ---------------------------[ Logging ]---------------------------------------
+# ---------------------------
+# Logger with fallback if locked
+# ---------------------------
+function New-LogWriter {
+    param([string]$DesiredPath)
+
+    try {
+        $sw = New-Object System.IO.StreamWriter($DesiredPath, $true, [System.Text.Encoding]::UTF8)
+        $sw.AutoFlush = $true
+        return @{ Writer=$sw; Path=$DesiredPath }
+    }
+    catch {
+        # Fallback log if file is locked
+        $fallback = [System.IO.Path]::Combine(
+            (Split-Path $DesiredPath),
+            ([System.IO.Path]::GetFileNameWithoutExtension($DesiredPath) + "_PID$PID.log")
+        )
+        $sw = New-Object System.IO.StreamWriter($fallback, $true, [System.Text.Encoding]::UTF8)
+        $sw.AutoFlush = $true
+        return @{ Writer=$sw; Path=$fallback }
+    }
+}
+
+$LogFile = Join-Path $LogsPath "step1_extract_all_sites_master_channels.log"
+$logObj  = New-LogWriter -DesiredPath $LogFile
+$script:LogWriter = $logObj.Writer
+$script:LogPath   = $logObj.Path
+
 function Write-Log {
     param(
-        [Parameter(Mandatory=$true)][ValidateSet("INFO","OK","WARN","ERROR","DEBUG")]$Level,
-        [Parameter(Mandatory=$true)][string]$Message
+        [string]$Level,
+        [string]$Message
     )
-
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    $line = "[{0}][{1}] {2}" -f $ts, $Level, $Message
+    $line = "[{0}][{1}] {2}" -f $ts, $Level.ToUpper(), $Message
 
-    # Console: INFO/OK/WARN/ERROR only (clean)
-    if ($Level -ne "DEBUG") {
-        Write-Host $line
-    }
+    # console
+    Write-Host $line
 
-    # File: all levels, safe append with retry
-    $maxTries = 5
-    for ($i=1; $i -le $maxTries; $i++) {
-        try {
-            Add-Content -Path $LogFile -Value $line -Encoding UTF8
-            break
-        } catch {
-            if ($i -eq $maxTries) { throw }
-            Start-Sleep -Milliseconds (150 * $i)
-        }
-    }
+    # file (never crash pipeline on log failure)
+    try { $script:LogWriter.WriteLine($line) } catch {}
 }
 
-Write-Log "INFO" "Starting step1_extract_all_sites_master_channels.ps1 v$ScriptVersion"
+Write-Log "INFO" "Starting $ScriptName v$ScriptVer (Mode=$Mode)"
 Write-Log "INFO" "BasePath=$BasePath"
 Write-Log "INFO" "SitesPath=$SitesPath"
-Write-Log "INFO" "RulesPath=$RulesPath"
-Write-Log "INFO" "DataPath=$DataPath"
-Write-Log "INFO" "VersionDir=$VersionDir"
+Write-Log "INFO" "WhitelistCSV=$WhitelistCSV"
+Write-Log "DEBUG" "LogPath=$script:LogPath"
 
-# ----------------------[ Default Whitelist ]----------------------------------
-# Relative paths under /sites. EXACTLY your approved list.
-$DefaultWhitelist = @(
-    "abc.net.au\abc.net.au_syd.channels.xml",
-    "directv.com\directv.com.channels.xml",
+# ---------------------------
+# Load whitelist
+# ---------------------------
+if (-not (Test-Path $WhitelistCSV)) {
+    Write-Log "ERROR" "Whitelist file not found: $WhitelistCSV"
+    if ($Mode -eq "Hard") { throw "Whitelist missing." } else { exit 1 }
+}
 
-    "epgshare01.online\epgshare01.online_AU1.channels.xml",
-    "epgshare01.online\epgshare01.online_CA1.channels.xml",
-    "epgshare01.online\epgshare01.online_UK1.channels.xml",
-    "epgshare01.online\epgshare01.online_US1.channels.xml",
-    "epgshare01.online\epgshare01.online_US_LOCALS2.channels.xml",
+$WhitelistRaw = Import-Csv $WhitelistCSV
+$Whitelist    = @($WhitelistRaw)  # force array to avoid Count regression
+$WhitelistCnt = ($Whitelist | Measure-Object).Count
+Write-Log "INFO" "Whitelist entries loaded: $WhitelistCnt"
 
-    "player.ee.co.uk\player.ee.co.uk.channels.xml",
-    "plex.tv\plex.tv.channels.xml",
+$requiredCols = @("site","enabled","allowed_files","note","default_country")
+$missing = @()
+foreach ($col in $requiredCols) {
+    if (-not ($WhitelistRaw | Get-Member -Name $col)) { $missing += $col }
+}
+if ($missing.Count -gt 0) {
+    Write-Log "ERROR" ("Whitelist missing columns: {0}" -f ($missing -join ", "))
+    if ($Mode -eq "Hard") { throw "Whitelist schema invalid." } else { exit 1 }
+}
 
-    "pluto.tv\pluto.tv_us.channels.xml",
-    "pluto.tv\pluto.tv_ca.channels.xml",
-    "pluto.tv\pluto.tv_uk.channels.xml",
+# keep only enabled=true rows
+$WhitelistEnabled = @($Whitelist | Where-Object {
+    $_.enabled -match '^(true|1|yes)$'
+})
+Write-Log "INFO" ("Enabled whitelist rows: {0}" -f (($WhitelistEnabled | Measure-Object).Count))
 
-    "tv24.co.uk\tv24.co.uk.channels.xml",
-    "tvguide.com\tvguide.com.channels.xml",
-    "tvinsider.com\tvinsider.com.channels.xml",
-    "virgintvgo.virginmedia.com\virgintvgo.virginmedia.com.channels.xml",
+# ---------------------------
+# Helper: parse XMLTV without namespace issues
+# ---------------------------
+function Get-TvNode {
+    param([xml]$XmlDoc)
 
-    "freeview.co.uk\freeview.co.uk.channels.xml"   # you explicitly approved this in whitelist
-)
+    if ($XmlDoc.tv) { return $XmlDoc.tv }
 
-# ----------------------[ Rules CSV Bootstrapping ]----------------------------
-if (!(Test-Path $SourcesCsv)) {
-    Write-Log "OK" "Creating rules whitelist file: $SourcesCsv"
-    "relative_path,enabled,note" | Out-File -FilePath $SourcesCsv -Encoding UTF8
-    foreach ($rp in $DefaultWhitelist) {
-        "{0},true,approved_whitelist" -f $rp | Add-Content -Path $SourcesCsv -Encoding UTF8
+    if ($XmlDoc.DocumentElement -and $XmlDoc.DocumentElement.LocalName -eq "tv") {
+        return $XmlDoc.DocumentElement
     }
+
+    # fallback for namespaces
+    return $XmlDoc.SelectSingleNode('//*[local-name()="tv"]')
 }
 
-# ----------------------[ Load Whitelist ]-------------------------------------
-$Whitelist = @()
-try {
-    $srcRows = Import-Csv $SourcesCsv
-    foreach ($r in $srcRows) {
-        if ($r.enabled -match "^(true|1|yes)$") {
-            $Whitelist += $r.relative_path
-        }
-    }
-} catch {
-    Write-Log "WARN" "Could not read $SourcesCsv, using internal defaults. Error=$($_.Exception.Message)"
-    $Whitelist = $DefaultWhitelist
+function Get-ChannelNodes {
+    param($TvNode)
+    if (-not $TvNode) { return @() }
+
+    # local-name() handles namespaces
+    return @($TvNode.SelectNodes('./*[local-name()="channel"]'))
 }
 
-if ($Whitelist.Count -eq 0) {
-    Write-Log "WARN" "Whitelist empty. Falling back to internal defaults."
-    $Whitelist = $DefaultWhitelist
-}
+# ---------------------------
+# Queue files
+# ---------------------------
+$queue = New-Object System.Collections.Generic.List[object]
 
-Write-Log "INFO" ("Whitelist files enabled={0}" -f $Whitelist.Count)
+foreach ($row in $WhitelistEnabled) {
+    $site = ($row.site | ForEach-Object { $_.Trim() })
+    $allowed = ($row.allowed_files | ForEach-Object { $_.Trim() })
 
-# ----------------------[ Helper: country infer ]------------------------------
-function Infer-Country {
-    param([string]$RelativePath, [string]$XmlTvId)
-
-    $file = [System.IO.Path]::GetFileName($RelativePath).ToLowerInvariant()
-
-    if ($file -match "_au" -or $file -match "pluto\.tv_au" -or $XmlTvId -match "\.au@") { return "AU" }
-    if ($file -match "_ca" -or $file -match "pluto\.tv_ca" -or $XmlTvId -match "\.ca@") { return "CA" }
-    if ($file -match "_uk" -or $file -match "freeview\.co\.uk" -or $file -match "tv24\.co\.uk" -or $XmlTvId -match "\.uk@") { return "UK" }
-    if ($file -match "_us" -or $file -match "directv\.com" -or $file -match "pluto\.tv_us" -or $XmlTvId -match "\.us@") { return "US" }
-
-    return ""
-}
-
-# ----------------------[ Helper: hd infer ]-----------------------------------
-function Infer-HDFlag {
-    param([string]$Name, [string]$XmlTvId)
-
-    $s = ($Name + " " + $XmlTvId).ToUpperInvariant()
-    if ($s -match "\bHD\b" -or $s -match "\bUHD\b" -or $s -match "1080" -or $s -match "4K") { return "HD" }
-    return "SD"
-}
-
-# ----------------------[ Helper: name extract ]-------------------------------
-function Extract-ChannelName {
-    param([xml]$Doc, $Node)
-
-    # 1) InnerText (most common)
-    $textName = ($Node.InnerText ?? "").Trim()
-    if ($textName) { return $textName }
-
-    # 2) @name attribute (some sources)
-    $attrName = ($Node.GetAttribute("name") ?? "").Trim()
-    if ($attrName) { return $attrName }
-
-    # 3) <display-name> child (xmltv-ish variants)
-    $dn = $Node.SelectSingleNode("display-name")
-    if ($dn -and ($dn.InnerText.Trim())) { return $dn.InnerText.Trim() }
-
-    return ""
-}
-
-# ---------------------------[ Collect Rows ]----------------------------------
-$AllRows = New-Object System.Collections.Generic.List[object]
-
-foreach ($rel in $Whitelist) {
-    $full = Join-Path $SitesPath $rel
-
-    if (!(Test-Path $full)) {
-        Write-Log "WARN" "Missing whitelist file: $rel (skipping)"
+    if ([string]::IsNullOrWhiteSpace($site) -or [string]::IsNullOrWhiteSpace($allowed)) {
+        Write-Log "WARN" "Whitelist row missing site/allowed_files: $($row | ConvertTo-Json -Compress)"
         continue
     }
 
-    Write-Log "INFO" "Loading: $rel"
+    # allow multiple allowed_files separated by ; or |
+    $files = $allowed -split '[;|]' | ForEach-Object { $_.Trim() } | Where-Object { $_ }
+
+    foreach ($relFile in $files) {
+        $full = Join-Path (Join-Path $SitesPath $site) $relFile
+        $queue.Add([pscustomobject]@{
+            site            = $site
+            relative_file   = $relFile
+            full_path       = $full
+            note            = $row.note
+            default_country = $row.default_country
+        })
+    }
+}
+
+Write-Log "INFO" ("Files queued: {0}" -f $queue.Count)
+if ($queue.Count -eq 0) {
+    Write-Log "ERROR" "No files queued. Check enabled and allowed_files in step1_sources.csv."
+    if ($Mode -eq "Hard") { throw "No files queued." } else { exit 1 }
+}
+
+# ---------------------------
+# Extract
+# ---------------------------
+$AllRows = New-Object System.Collections.Generic.List[object]
+$filesProcessed = 0
+
+foreach ($item in $queue) {
+    $relDisplay = Join-Path $item.site $item.relative_file
+
+    if (-not (Test-Path $item.full_path)) {
+        Write-Log "WARN" "Missing file: $relDisplay"
+        if ($Mode -eq "Hard") { throw "Missing file $relDisplay" }
+        continue
+    }
+
+    Write-Log "INFO" "Loading: $relDisplay"
 
     try {
-        [xml]$doc = Get-Content -LiteralPath $full -Raw -Encoding UTF8
-        $channels = $doc.SelectNodes("//channel")
+        $raw = Get-Content -Raw -LiteralPath $item.full_path
+        if ([string]::IsNullOrWhiteSpace($raw)) {
+            throw "Empty XML file."
+        }
 
-        if (-not $channels) {
-            Write-Log "WARN" "No <channel> nodes found in $rel"
+        $xml = [xml]$raw
+        $tvNode = Get-TvNode -XmlDoc $xml
+        if (-not $tvNode) {
+            throw "No <tv> root found (namespace or invalid XMLTV)."
+        }
+
+        $channels = Get-ChannelNodes -TvNode $tvNode
+        if ($channels.Count -eq 0) {
+            Write-Log "WARN" "No <channel> nodes found in $relDisplay"
+            $filesProcessed++
             continue
         }
 
         foreach ($ch in $channels) {
-            $site    = ($ch.GetAttribute("site")    ?? "").Trim()
-            $site_id = ($ch.GetAttribute("site_id") ?? "").Trim()
-            $lang    = ($ch.GetAttribute("lang")    ?? "").Trim()
-            $xmltv   = ($ch.GetAttribute("xmltv_id")?? "").Trim()
-            $c_attr  = ($ch.GetAttribute("country") ?? "").Trim()
+            $idAttr = $ch.id
+            if ([string]::IsNullOrWhiteSpace($idAttr)) { $idAttr = "" }
 
-            $name = Extract-ChannelName -Doc $doc -Node $ch
-            if (-not $name) { $name = "" }
+            $displayNodes = @($ch.SelectNodes('./*[local-name()="display-name"]'))
+            $name = ""
+            $callsign = ""
+            $lang = ""
 
-            $country = if ($c_attr) { $c_attr.ToUpperInvariant() } else { (Infer-Country -RelativePath $rel -XmlTvId $xmltv) }
-            $hd_flag = Infer-HDFlag -Name $name -XmlTvId $xmltv
-
-            $row = [PSCustomObject]@{
-                site     = $site
-                relative = $rel
-                name     = $name
-                xmltv_id = $xmltv
-                lang     = $lang
-                site_id  = $site_id
-                country  = $country
-                hd_flag  = $hd_flag
+            if ($displayNodes.Count -ge 1) {
+                $name = ($displayNodes[0].InnerText).Trim()
+                $lang = ($displayNodes[0].GetAttribute("lang")).Trim()
+            }
+            if ($displayNodes.Count -ge 2) {
+                $callsign = ($displayNodes[1].InnerText).Trim()
             }
 
-            $AllRows.Add($row) | Out-Null
+            $countryNode = $ch.SelectSingleNode('./*[local-name()="country"]')
+            $country = ""
+            if ($countryNode) {
+                $country = ($countryNode.InnerText).Trim()
+            }
+            if ([string]::IsNullOrWhiteSpace($country)) {
+                $country = ($item.default_country).Trim()  # may be blank for GLOBAL
+            }
+
+            # basic quality/resolution if present in some feeds
+            $resNode = $ch.SelectSingleNode('./*[local-name()="video"]/*[local-name()="quality"]')
+            $quality = if ($resNode) { ($resNode.InnerText).Trim() } else { "" }
+
+            $AllRows.Add([pscustomobject]@{
+                site          = $item.site
+                relative_file = $relDisplay
+                channel_name  = $name
+                callsign      = $callsign
+                lang          = $lang
+                channel_id    = $idAttr
+                country       = $country
+                quality       = $quality
+            })
         }
-    } catch {
-        Write-Log "ERROR" "Failed parsing $rel : $($_.Exception.Message)"
+
+        $filesProcessed++
+    }
+    catch {
+        Write-Log "ERROR" "Failed parsing $relDisplay : $($_.Exception.Message)"
+        if ($Mode -eq "Hard") { throw }
         continue
     }
 }
 
-$rawCount = $AllRows.Count
-Write-Log "INFO" "Extraction complete. Total rows collected (raw): $rawCount"
+Write-Log "INFO" ("Files processed: {0}" -f $filesProcessed)
+Write-Log "INFO" ("Rows collected (raw): {0}" -f $AllRows.Count)
 
-# ---------------------------[ Deduce Duplicates ]-----------------------------
-# Remove exact duplicates using composite key
-$seen = @{}
-$deduped = New-Object System.Collections.Generic.List[object]
+# ---------------------------
+# Deduplicate
+# ---------------------------
+$deduped = @(
+    $AllRows |
+    Sort-Object site, relative_file, channel_id, channel_name, callsign, lang, country, quality -Unique
+)
+$dupRemoved = $AllRows.Count - $deduped.Count
+Write-Log "INFO" ("Deduped rows: {0} (duplicates removed={1})" -f $deduped.Count, $dupRemoved)
 
-foreach ($r in $AllRows) {
-    $key = "{0}|{1}|{2}|{3}|{4}|{5}" -f $r.site, $r.relative, $r.site_id, $r.xmltv_id, $r.name, $r.lang
-    if (-not $seen.ContainsKey($key)) {
-        $seen[$key] = $true
-        $deduped.Add($r) | Out-Null
-    }
-}
-
-$dedupCount = $deduped.Count
-$dupsRemoved = $rawCount - $dedupCount
-Write-Log "INFO" "Deduped rows=$dedupCount (duplicates removed=$dupsRemoved)"
-
-# ---------------------------[ Write Outputs ]---------------------------------
+# ---------------------------
+# Write outputs
+# ---------------------------
 try {
-    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $MasterCsv
-    Write-Log "OK" "Wrote master CSV: $MasterCsv"
+    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $StableCsv -Force
+    Write-Log "OK" "Wrote stable baseline CSV: $StableCsv"
 
-    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $VersionCsv
-    Write-Log "OK" "Wrote versioned dataset: $VersionCsv"
-} catch {
-    Write-Log "ERROR" "Failed writing outputs: $($_.Exception.Message)"
-    throw
+    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $VersionedCsv -Force
+    Write-Log "OK" "Wrote versioned CSV: $VersionedCsv"
+}
+catch {
+    Write-Log "ERROR" "Failed writing output CSV(s): $($_.Exception.Message)"
+    if ($Mode -eq "Hard") { throw }
 }
 
 Write-Log "INFO" "Step 1 complete."
-Write-Log "INFO" "Finished step1_extract_all_sites_master_channels.ps1"
+Write-Log "INFO" "Finished $ScriptName"
+
+try { $script:LogWriter.Flush(); $script:LogWriter.Close() } catch {}

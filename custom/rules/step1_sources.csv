@@ -1,0 +1,17 @@
+site,enabled,allowed_files,default_country,note
+abc.net.au,true,abc.net.au_syd.channels.xml,AU,Sydney AU only
+directv.com,true,directv.com.channels.xml,US,US national
+epgshare01.online,true,epgshare01.online_AU1.channels.xml,AU,AU
+epgshare01.online,true,epgshare01.online_CA1.channels.xml,CA,CA
+epgshare01.online,true,epgshare01.online_UK1.channels.xml,UK,UK
+epgshare01.online,true,epgshare01.online_US1.channels.xml,US,US
+epgshare01.online,true,epgshare01.online_US_LOCALS2.channels.xml,US,US locals
+player.ee.co.uk,true,player.ee.co.uk.channels.xml,UK,UK
+plex.tv,true,plex.tv.channels.xml,,Global OTT (no default)
+pluto.tv,true,pluto.tv_us.channels.xml,US,US Pluto
+pluto.tv,true,pluto.tv_ca.channels.xml,CA,CA Pluto
+pluto.tv,true,pluto.tv_uk.channels.xml,UK,UK Pluto
+tv24.co.uk,true,tv24.co.uk.channels.xml,UK,UK
+tvguide.com,true,tvguide.com.channels.xml,US,US
+tvinsider.com,true,tvinsider.com.channels.xml,US,US
+virgintvgo.virginmedia.com,true,virgintvgo.virginmedia.com.channels.xml,UK,UK
