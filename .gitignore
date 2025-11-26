@@ -7,6 +7,10 @@
 .secrets
 *.bak
 /.my_notes
+/custom/data/.preferenecs
+
+
+
 
 # macOS
 .DS_Store
