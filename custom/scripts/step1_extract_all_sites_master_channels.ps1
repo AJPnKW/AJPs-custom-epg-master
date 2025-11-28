@@ -1,309 +1,204 @@
 <#
-Script Name: step1_extract_all_sites_master_channels.ps1
-Purpose:     Step 1 of AJP custom EPG pipeline. Extracts master channel list
-             ONLY from whitelisted site XML files (step1_sources.csv).
-Author:      ChatGPT (for Andrew J. Pearen)
-Version:     3.1
-Created:     2025-11-24
-Last Update: 2025-11-24
+    Script:  step1_extract_all_sites_master_channels.ps1
+    Version: 4.1.0
+    Purpose:
+      - Locate the best available master channels CSV (all_sites_master_channels.csv)
+        from a set of candidate locations and snapshot it into:
+          custom\baseline\all_sites_master_channels.csv         (stable)
+          custom\baseline\versioned\all_sites_master_channels_YYYYMMDD_HHMMSS.csv
+      - Avoid writing *anything* into custom\scripts.
+      - Provide strong logging and simple QA so we don't regress into old bugs.
 
-Run:
-  PowerShell: C:\Users\<user>\PROJECTS\AJPs-custom-epg-master\AJPs-custom-epg-master\custom\scripts\step1_extract_all_sites_master_channels.ps1 -Mode Soft
+    Candidate search order (by folder, but final choice is by largest non-zero Length):
+      1) custom\data\all_sites_master_channels.csv
+      2) custom\scripts\all_sites_master_channels.csv
+      3) custom\baseline\all_sites_master_channels.csv
 #>
 
 [CmdletBinding()]
 param(
-    [ValidateSet("Soft","Hard")]
+    [ValidateSet("Soft", "Hard")]
     [string]$Mode = "Soft"
 )
 
-Set-StrictMode -Version Latest
-$ErrorActionPreference = "Stop"
+# ------------------------------
+# 1. Version & basic paths
+# ------------------------------
+$ScriptName    = "step1_extract_all_sites_master_channels.ps1"
+$ScriptVersion = "4.1.0"
 
-# ---------------------------
-# Paths / constants
-# ---------------------------
-$ScriptName   = Split-Path $PSCommandPath -Leaf
-$ScriptVer    = "3.1"
-$NowStamp     = Get-Date -Format "yyyyMMdd_HHmmss"
+# current script folder = custom\scripts
+$ScriptRoot   = Split-Path -Parent $PSCommandPath      # ...\custom\scripts
+$CustomFolder = Split-Path -Parent $ScriptRoot         # ...\custom
+$BasePath     = Split-Path -Parent $CustomFolder       # ...\AJPs-custom-epg-master\AJPs-custom-epg-master
 
-$BasePath     = Resolve-Path (Join-Path $PSScriptRoot "..\..") | Select-Object -ExpandProperty Path
-$CustomPath   = Join-Path $BasePath "custom"
-$SitesPath    = Join-Path $BasePath "sites"
-$RulesPath    = Join-Path $CustomPath "rules"
-$LogsPath     = Join-Path $CustomPath "logs"
-$BaselinePath = Join-Path $CustomPath "baseline"
-$VersionedOut = Join-Path $BaselinePath "versioned"
-
-$WhitelistCSV = Join-Path $RulesPath "step1_sources.csv"
+# Key folders
+$DataFolder      = Join-Path $CustomFolder "data"
+$BaselineFolder  = Join-Path $CustomFolder "baseline"
+$VersionedFolder = Join-Path $BaselineFolder "versioned"
+$LogsFolder      = Join-Path $CustomFolder "logs"
+$ScriptsFolder   = $ScriptRoot
 
 # Output files
-$StableCsv    = Join-Path $BaselinePath "all_sites_master_channels.csv"
-$VersionedCsv = Join-Path $VersionedOut ("all_sites_master_channels_{0}.csv" -f $NowStamp)
+$Timestamp    = Get-Date -Format "yyyyMMdd_HHmmss"
+$StableCsv    = Join-Path $BaselineFolder "all_sites_master_channels.csv"
+$VersionedCsv = Join-Path $VersionedFolder ("all_sites_master_channels_{0}.csv" -f $Timestamp)
+$LogFile      = Join-Path $LogsFolder "step1_extract_all_sites_master_channels.log"
 
-# ---------------------------
-# Safe folder ensures
-# ---------------------------
-$foldersToEnsure = @($LogsPath, $BaselinePath, $VersionedOut)
-foreach ($f in $foldersToEnsure) {
-    if (-not (Test-Path $f)) {
-        New-Item -ItemType Directory -Force -Path $f | Out-Null
-    }
-}
-
-# ---------------------------
-# Logger with fallback if locked
-# ---------------------------
-function New-LogWriter {
-    param([string]$DesiredPath)
-
-    try {
-        $sw = New-Object System.IO.StreamWriter($DesiredPath, $true, [System.Text.Encoding]::UTF8)
-        $sw.AutoFlush = $true
-        return @{ Writer=$sw; Path=$DesiredPath }
-    }
-    catch {
-        # Fallback log if file is locked
-        $fallback = [System.IO.Path]::Combine(
-            (Split-Path $DesiredPath),
-            ([System.IO.Path]::GetFileNameWithoutExtension($DesiredPath) + "_PID$PID.log")
-        )
-        $sw = New-Object System.IO.StreamWriter($fallback, $true, [System.Text.Encoding]::UTF8)
-        $sw.AutoFlush = $true
-        return @{ Writer=$sw; Path=$fallback }
-    }
-}
-
-$LogFile = Join-Path $LogsPath "step1_extract_all_sites_master_channels.log"
-$logObj  = New-LogWriter -DesiredPath $LogFile
-$script:LogWriter = $logObj.Writer
-$script:LogPath   = $logObj.Path
-
+# ------------------------------
+# 2. Logging helper
+# ------------------------------
 function Write-Log {
     param(
+        [Parameter(Mandatory=$true)][ValidateSet("DEBUG","INFO","WARN","ERROR","OK")]
         [string]$Level,
-        [string]$Message
+        [Parameter(Mandatory=$true)][string]$Message
     )
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    $line = "[{0}][{1}] {2}" -f $ts, $Level.ToUpper(), $Message
-
-    # console
+    $line = "[{0}][{1}] {2}" -f $ts, $Level, $Message
     Write-Host $line
-
-    # file (never crash pipeline on log failure)
-    try { $script:LogWriter.WriteLine($line) } catch {}
-}
-
-Write-Log "INFO" "Starting $ScriptName v$ScriptVer (Mode=$Mode)"
-Write-Log "INFO" "BasePath=$BasePath"
-Write-Log "INFO" "SitesPath=$SitesPath"
-Write-Log "INFO" "WhitelistCSV=$WhitelistCSV"
-Write-Log "DEBUG" "LogPath=$script:LogPath"
-
-# ---------------------------
-# Load whitelist
-# ---------------------------
-if (-not (Test-Path $WhitelistCSV)) {
-    Write-Log "ERROR" "Whitelist file not found: $WhitelistCSV"
-    if ($Mode -eq "Hard") { throw "Whitelist missing." } else { exit 1 }
-}
-
-$WhitelistRaw = Import-Csv $WhitelistCSV
-$Whitelist    = @($WhitelistRaw)  # force array to avoid Count regression
-$WhitelistCnt = ($Whitelist | Measure-Object).Count
-Write-Log "INFO" "Whitelist entries loaded: $WhitelistCnt"
-
-$requiredCols = @("site","enabled","allowed_files","note","default_country")
-$missing = @()
-foreach ($col in $requiredCols) {
-    if (-not ($WhitelistRaw | Get-Member -Name $col)) { $missing += $col }
-}
-if ($missing.Count -gt 0) {
-    Write-Log "ERROR" ("Whitelist missing columns: {0}" -f ($missing -join ", "))
-    if ($Mode -eq "Hard") { throw "Whitelist schema invalid." } else { exit 1 }
-}
-
-# keep only enabled=true rows
-$WhitelistEnabled = @($Whitelist | Where-Object {
-    $_.enabled -match '^(true|1|yes)$'
-})
-Write-Log "INFO" ("Enabled whitelist rows: {0}" -f (($WhitelistEnabled | Measure-Object).Count))
-
-# ---------------------------
-# Helper: parse XMLTV without namespace issues
-# ---------------------------
-function Get-TvNode {
-    param([xml]$XmlDoc)
-
-    if ($XmlDoc.tv) { return $XmlDoc.tv }
-
-    if ($XmlDoc.DocumentElement -and $XmlDoc.DocumentElement.LocalName -eq "tv") {
-        return $XmlDoc.DocumentElement
-    }
-
-    # fallback for namespaces
-    return $XmlDoc.SelectSingleNode('//*[local-name()="tv"]')
-}
-
-function Get-ChannelNodes {
-    param($TvNode)
-    if (-not $TvNode) { return @() }
-
-    # local-name() handles namespaces
-    return @($TvNode.SelectNodes('./*[local-name()="channel"]'))
-}
-
-# ---------------------------
-# Queue files
-# ---------------------------
-$queue = New-Object System.Collections.Generic.List[object]
-
-foreach ($row in $WhitelistEnabled) {
-    $site = ($row.site | ForEach-Object { $_.Trim() })
-    $allowed = ($row.allowed_files | ForEach-Object { $_.Trim() })
-
-    if ([string]::IsNullOrWhiteSpace($site) -or [string]::IsNullOrWhiteSpace($allowed)) {
-        Write-Log "WARN" "Whitelist row missing site/allowed_files: $($row | ConvertTo-Json -Compress)"
-        continue
-    }
-
-    # allow multiple allowed_files separated by ; or |
-    $files = $allowed -split '[;|]' | ForEach-Object { $_.Trim() } | Where-Object { $_ }
-
-    foreach ($relFile in $files) {
-        $full = Join-Path (Join-Path $SitesPath $site) $relFile
-        $queue.Add([pscustomobject]@{
-            site            = $site
-            relative_file   = $relFile
-            full_path       = $full
-            note            = $row.note
-            default_country = $row.default_country
-        })
-    }
-}
-
-Write-Log "INFO" ("Files queued: {0}" -f $queue.Count)
-if ($queue.Count -eq 0) {
-    Write-Log "ERROR" "No files queued. Check enabled and allowed_files in step1_sources.csv."
-    if ($Mode -eq "Hard") { throw "No files queued." } else { exit 1 }
-}
-
-# ---------------------------
-# Extract
-# ---------------------------
-$AllRows = New-Object System.Collections.Generic.List[object]
-$filesProcessed = 0
-
-foreach ($item in $queue) {
-    $relDisplay = Join-Path $item.site $item.relative_file
-
-    if (-not (Test-Path $item.full_path)) {
-        Write-Log "WARN" "Missing file: $relDisplay"
-        if ($Mode -eq "Hard") { throw "Missing file $relDisplay" }
-        continue
-    }
-
-    Write-Log "INFO" "Loading: $relDisplay"
-
     try {
-        $raw = Get-Content -Raw -LiteralPath $item.full_path
-        if ([string]::IsNullOrWhiteSpace($raw)) {
-            throw "Empty XML file."
-        }
-
-        $xml = [xml]$raw
-        $tvNode = Get-TvNode -XmlDoc $xml
-        if (-not $tvNode) {
-            throw "No <tv> root found (namespace or invalid XMLTV)."
-        }
-
-        $channels = Get-ChannelNodes -TvNode $tvNode
-        if ($channels.Count -eq 0) {
-            Write-Log "WARN" "No <channel> nodes found in $relDisplay"
-            $filesProcessed++
-            continue
-        }
-
-        foreach ($ch in $channels) {
-            $idAttr = $ch.id
-            if ([string]::IsNullOrWhiteSpace($idAttr)) { $idAttr = "" }
-
-            $displayNodes = @($ch.SelectNodes('./*[local-name()="display-name"]'))
-            $name = ""
-            $callsign = ""
-            $lang = ""
-
-            if ($displayNodes.Count -ge 1) {
-                $name = ($displayNodes[0].InnerText).Trim()
-                $lang = ($displayNodes[0].GetAttribute("lang")).Trim()
-            }
-            if ($displayNodes.Count -ge 2) {
-                $callsign = ($displayNodes[1].InnerText).Trim()
-            }
-
-            $countryNode = $ch.SelectSingleNode('./*[local-name()="country"]')
-            $country = ""
-            if ($countryNode) {
-                $country = ($countryNode.InnerText).Trim()
-            }
-            if ([string]::IsNullOrWhiteSpace($country)) {
-                $country = ($item.default_country).Trim()  # may be blank for GLOBAL
-            }
-
-            # basic quality/resolution if present in some feeds
-            $resNode = $ch.SelectSingleNode('./*[local-name()="video"]/*[local-name()="quality"]')
-            $quality = if ($resNode) { ($resNode.InnerText).Trim() } else { "" }
-
-            $AllRows.Add([pscustomobject]@{
-                site          = $item.site
-                relative_file = $relDisplay
-                channel_name  = $name
-                callsign      = $callsign
-                lang          = $lang
-                channel_id    = $idAttr
-                country       = $country
-                quality       = $quality
-            })
-        }
-
-        $filesProcessed++
-    }
-    catch {
-        Write-Log "ERROR" "Failed parsing $relDisplay : $($_.Exception.Message)"
-        if ($Mode -eq "Hard") { throw }
-        continue
+        Add-Content -Path $LogFile -Value $line -ErrorAction SilentlyContinue
+    } catch {
+        Write-Host "[{0}][WARN] Failed to write to log file: {1}" -f $ts, $_.Exception.Message
     }
 }
 
-Write-Log "INFO" ("Files processed: {0}" -f $filesProcessed)
-Write-Log "INFO" ("Rows collected (raw): {0}" -f $AllRows.Count)
+# ------------------------------
+# 3. Ensure required folders exist
+# ------------------------------
+foreach ($folder in @($BaselineFolder, $VersionedFolder, $LogsFolder)) {
+    if (-not (Test-Path $folder)) {
+        New-Item -ItemType Directory -Path $folder -Force | Out-Null
+        Write-Log -Level "DEBUG" -Message "Created folder: $folder"
+    } else {
+        Write-Log -Level "DEBUG" -Message "Folder exists: $folder"
+    }
+}
 
-# ---------------------------
-# Deduplicate
-# ---------------------------
-$deduped = @(
-    $AllRows |
-    Sort-Object site, relative_file, channel_id, channel_name, callsign, lang, country, quality -Unique
+# ------------------------------
+# 4. Start banner
+# ------------------------------
+Write-Log -Level "INFO" -Message "Starting $ScriptName v$ScriptVersion (Mode=$Mode)"
+Write-Log -Level "INFO" -Message "BasePath=$BasePath"
+Write-Log -Level "INFO" -Message "CustomFolder=$CustomFolder"
+Write-Log -Level "INFO" -Message "DataFolder=$DataFolder"
+Write-Log -Level "INFO" -Message "BaselineFolder=$BaselineFolder"
+Write-Log -Level "INFO" -Message "VersionedFolder=$VersionedFolder"
+Write-Log -Level "INFO" -Message "ScriptsFolder=$ScriptsFolder"
+
+# ------------------------------
+# 5. Discover best source CSV
+# ------------------------------
+$candidatePaths = @(
+    Join-Path $DataFolder    "all_sites_master_channels.csv",
+    Join-Path $ScriptsFolder "all_sites_master_channels.csv",
+    Join-Path $BaselineFolder "all_sites_master_channels.csv"
 )
-$dupRemoved = $AllRows.Count - $deduped.Count
-Write-Log "INFO" ("Deduped rows: {0} (duplicates removed={1})" -f $deduped.Count, $dupRemoved)
 
-# ---------------------------
-# Write outputs
-# ---------------------------
+Write-Log -Level "DEBUG" -Message "Scanning candidate source CSV locations:"
+foreach ($c in $candidatePaths) {
+    Write-Log -Level "DEBUG" -Message "  Candidate: $c"
+}
+
+$candidateInfos = @()
+
+foreach ($path in $candidatePaths) {
+    if (Test-Path $path) {
+        try {
+            $info = Get-Item $path
+            $len  = [int64]$info.Length
+            Write-Log -Level "DEBUG" -Message "  Found candidate: $path (Length=$len)"
+            if ($len -gt 0) {
+                $candidateInfos += $info
+            } else {
+                Write-Log -Level "WARN" -Message "  Candidate exists but is empty (0 bytes): $path"
+            }
+        } catch {
+            Write-Log -Level "WARN" -Message "  Failed to inspect candidate: $path : $($_.Exception.Message)"
+        }
+    } else {
+        Write-Log -Level "DEBUG" -Message "  Candidate not found: $path"
+    }
+}
+
+if (-not $candidateInfos -or $candidateInfos.Count -eq 0) {
+    Write-Log -Level "ERROR" -Message "No non-empty all_sites_master_channels.csv found in data/scripts/baseline."
+    if ($Mode -eq "Hard") {
+        Write-Log -Level "ERROR" -Message "Mode=Hard → failing pipeline."
+        exit 1
+    } else {
+        Write-Log -Level "WARN" -Message "Mode=Soft → exiting Step 1 gracefully with no output."
+        exit 0
+    }
+}
+
+# pick the largest non-zero candidate as source-of-truth
+$BestSourceInfo = $candidateInfos | Sort-Object -Property Length -Descending | Select-Object -First 1
+$SourceCsv = $BestSourceInfo.FullName
+$SourceLen = $BestSourceInfo.Length
+
+Write-Log -Level "OK" -Message "Selected source CSV: $SourceCsv (Length=$SourceLen)"
+Write-Log -Level "INFO" -Message "StableCsv=$StableCsv"
+Write-Log -Level "INFO" -Message "VersionedCsv=$VersionedCsv"
+
+# ------------------------------
+# 6. Load source rows
+# ------------------------------
 try {
-    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $StableCsv -Force
-    Write-Log "OK" "Wrote stable baseline CSV: $StableCsv"
-
-    $deduped | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $VersionedCsv -Force
-    Write-Log "OK" "Wrote versioned CSV: $VersionedCsv"
-}
-catch {
-    Write-Log "ERROR" "Failed writing output CSV(s): $($_.Exception.Message)"
-    if ($Mode -eq "Hard") { throw }
+    $SourceRows = Import-Csv -Path $SourceCsv
+} catch {
+    Write-Log -Level "ERROR" -Message "Failed to Import-Csv from $SourceCsv : $($_.Exception.Message)"
+    if ($Mode -eq "Hard") { exit 1 } else { exit 0 }
 }
 
-Write-Log "INFO" "Step 1 complete."
-Write-Log "INFO" "Finished $ScriptName"
+$sourceCount = if ($SourceRows) { $SourceRows.Count } else { 0 }
+Write-Log -Level "INFO" -Message "Loaded $sourceCount rows from selected source CSV."
 
-try { $script:LogWriter.Flush(); $script:LogWriter.Close() } catch {}
+if ($sourceCount -eq 0) {
+    Write-Log -Level "WARN" -Message "Selected source CSV has headers but no data rows. Nothing to snapshot."
+    if ($Mode -eq "Hard") {
+        Write-Log -Level "ERROR" -Message "Mode=Hard → failing pipeline."
+        exit 1
+    } else {
+        exit 0
+    }
+}
+
+# ------------------------------
+# 7. Write stable + versioned copies
+# ------------------------------
+try {
+    $SourceRows | Export-Csv -NoTypeInformation -Path $StableCsv
+    Write-Log -Level "OK" -Message "Wrote stable baseline CSV: $StableCsv"
+} catch {
+    Write-Log -Level "ERROR" -Message "Failed to write stable CSV to $StableCsv : $($_.Exception.Message)"
+    if ($Mode -eq "Hard") { exit 1 }
+}
+
+try {
+    $SourceRows | Export-Csv -NoTypeInformation -Path $VersionedCsv
+    Write-Log -Level "OK" -Message "Wrote versioned baseline CSV: $VersionedCsv"
+} catch {
+    Write-Log -Level "ERROR" -Message "Failed to write versioned CSV to $VersionedCsv : $($_.Exception.Message)"
+    if ($Mode -eq "Hard") { exit 1 }
+}
+
+# ------------------------------
+# 8. QA check: re-load stable and compare row counts
+# ------------------------------
+try {
+    $StableRows = Import-Csv -Path $StableCsv
+    $stableCount = if ($StableRows) { $StableRows.Count } else { 0 }
+
+    if ($stableCount -ne $sourceCount) {
+        Write-Log -Level "WARN" -Message "Row count mismatch after export: source=$sourceCount, stable=$stableCount"
+    } else {
+        Write-Log -Level "OK" -Message "Row count QA passed: $sourceCount rows."
+    }
+} catch {
+    Write-Log -Level "WARN" -Message "Could not re-load stable CSV for QA: $($_.Exception.Message)"
+}
+
+Write-Log -Level "INFO" -Message "Step 1 complete."
+Write-Log -Level "INFO" -Message "Finished $ScriptName v$ScriptVersion"
